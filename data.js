@@ -298,6 +298,25 @@ const WEEKS_DATA = [
   },
   {
     "week": 15,
+    "topic": "ECMO",
+    "title": "Multisite Venovenous Cannulation for ECMO in Neonates and Infants",
+    "papers": [
+      {
+        "filename": "Multisite VV Neonate PCCM 2021.pdf",
+        "relative_path": "PDSCC_Library/ECMO/Multisite VV Neonate PCCM 2021.pdf",
+        "population": "neonatal",
+        "description": "Single-center feasibility series: jugular-to-femoral multisite VV cannulation in patients <10 kg, smallest 2.1 kg (Lillie et al, PCCM 2021)"
+      },
+      {
+        "filename": "Multisite Neo VV ELSO PCCM 2026.pdf",
+        "relative_path": "PDSCC_Library/ECMO/Multisite Neo VV ELSO PCCM 2026.pdf",
+        "population": "neonatal",
+        "description": "ELSO registry study (2013–2023): multisite vs. dual-lumen VV cannulation outcomes in neonates and infants (Lillie et al, PCCM 2026)"
+      }
+    ]
+  },
+  {
+    "week": 16,
     "topic": "Transfusion",
     "title": "Massive Transfusion Protocols in Pediatric Trauma",
     "papers": [
@@ -316,7 +335,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 16,
+    "week": 17,
     "topic": "Nutrition",
     "title": "Timing of Parenteral Nutrition in Critical Illness",
     "papers": [
@@ -329,7 +348,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 17,
+    "week": 18,
     "topic": "AKI",
     "title": "Epidemiology of Pediatric AKI",
     "papers": [
@@ -348,7 +367,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 18,
+    "week": 19,
     "topic": "ECMO",
     "title": "ECMO Anticoagulation and Coagulation Management",
     "papers": [
@@ -361,7 +380,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 19,
+    "week": 20,
     "topic": "ARDS",
     "title": "High-Frequency Oscillatory Ventilation in ARDS/PARDS",
     "papers": [
@@ -392,7 +411,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 20,
+    "week": 21,
     "topic": "Neonatal Hemodynamics",
     "title": "Neonatal Hemodynamics",
     "papers": [
@@ -405,7 +424,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 21,
+    "week": 22,
     "topic": "Transfusion",
     "title": "Age of Transfused Blood",
     "papers": [
@@ -418,7 +437,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 22,
+    "week": 23,
     "topic": "Sepsis",
     "title": "Early Goal-Directed Therapy — Rise and Fall of a Sepsis Paradigm",
     "papers": [
@@ -455,7 +474,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 23,
+    "week": 24,
     "topic": "Delirium",
     "title": "PICU Delirium and Post-TBI Tracheostomy",
     "papers": [
@@ -474,7 +493,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 24,
+    "week": 25,
     "topic": "ECMO",
     "title": "ECMO as Rescue Therapy in Severe ARDS",
     "papers": [
@@ -499,7 +518,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 25,
+    "week": 26,
     "topic": "Nutrition",
     "title": "Enteral Nutrition During Vasopressor Support",
     "papers": [
@@ -512,7 +531,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 26,
+    "week": 27,
     "topic": "AKI/Neonatal",
     "title": "Neonatal AKI Epidemiology (AWAKEN)",
     "papers": [
@@ -525,7 +544,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 27,
+    "week": 28,
     "topic": "ARDS",
     "title": "Defining Pediatric ARDS (PALICC)",
     "papers": [
@@ -538,7 +557,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 28,
+    "week": 29,
     "topic": "TBI",
     "title": "Severe Traumatic Brain Injury Guidelines",
     "papers": [
@@ -551,7 +570,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 29,
+    "week": 30,
     "topic": "Delirium/Sedation",
     "title": "ICU Liberation: the ABCDEF Bundle and Pediatric Sedation Guidelines",
     "papers": [
@@ -570,7 +589,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 30,
+    "week": 31,
     "topic": "Transfusion",
     "title": "Pediatric Transfusion Consensus Guidelines (TAXI)",
     "papers": [
@@ -583,7 +602,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 31,
+    "week": 32,
     "topic": "Transfusion",
     "title": "Tranexamic Acid in Trauma",
     "papers": [
@@ -608,7 +627,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 32,
+    "week": 33,
     "topic": "Sepsis/ECMO",
     "title": "VA-ECMO in Septic Shock",
     "papers": [
@@ -633,7 +652,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 33,
+    "week": 34,
     "topic": "Endocrine",
     "title": "Corticosteroids in Adult Septic Shock (ADRENAL)",
     "papers": [
@@ -646,7 +665,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 34,
+    "week": 35,
     "topic": "ARDS",
     "title": "Pediatric Tracheostomy: Timing and Outcomes",
     "papers": [
@@ -659,7 +678,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 35,
+    "week": 36,
     "topic": "Transfusion",
     "title": "Bleeding Assessment and Institutional ECMO Experience",
     "papers": [
@@ -684,7 +703,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 36,
+    "week": 37,
     "topic": "AKI/Dosing",
     "title": "CRRT Dosing/Intensity",
     "papers": [
@@ -697,7 +716,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 37,
+    "week": 38,
     "topic": "ARDS",
     "title": "Neuromuscular Blockade in ARDS",
     "papers": [
@@ -744,7 +763,7 @@ const WEEKS_DATA = [
         "description": "PODIUM — respiratory dysfunction criteria"
       }
     ],
-    "week": 38
+    "week": 39
   },
   {
     "topic": "Acute Liver Failure",
@@ -763,10 +782,10 @@ const WEEKS_DATA = [
         "description": "PODIUM — acute liver dysfunction criteria"
       }
     ],
-    "week": 39
+    "week": 40
   },
   {
-    "week": 40,
+    "week": 41,
     "topic": "Sepsis",
     "title": "Pediatric Sepsis: Guidelines and the New Phoenix Criteria",
     "papers": [
@@ -785,7 +804,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 41,
+    "week": 42,
     "topic": "Transfusion",
     "title": "Whole Blood Resuscitation in Trauma",
     "papers": [
@@ -804,7 +823,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 42,
+    "week": 43,
     "topic": "ECMO",
     "title": "Extracorporeal Cardiopulmonary Resuscitation (ECPR)",
     "papers": [
@@ -817,7 +836,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 43,
+    "week": 44,
     "topic": "ARDS",
     "title": "Surfactant Therapy in PARDS",
     "papers": [
@@ -1853,6 +1872,20 @@ const MANIFEST_DATA = [
     "relative_path": "PDSCC_Library/PODIUM/PODIUM Liver.pdf",
     "source": "drive",
     "original_drive_id": "1nquQ6hvH1kPiMH-JJrPECaSbgvEimHRD"
+  },
+  {
+    "topic": "ECMO",
+    "filename": "Multisite VV Neonate PCCM 2021.pdf",
+    "relative_path": "PDSCC_Library/ECMO/Multisite VV Neonate PCCM 2021.pdf",
+    "source": "drive",
+    "original_drive_id": "12N33aOATdI4HtrnXSj8pEE0J1ZBfJ0W_"
+  },
+  {
+    "topic": "ECMO",
+    "filename": "Multisite Neo VV ELSO PCCM 2026.pdf",
+    "relative_path": "PDSCC_Library/ECMO/Multisite Neo VV ELSO PCCM 2026.pdf",
+    "source": "drive",
+    "original_drive_id": "1OOG0L_TyIn5OqsLrh3AP06w3J16gYX-x"
   }
 ];
 
@@ -2581,6 +2614,61 @@ const QUESTIONS_DATA = [
   },
   {
     "week": 15,
+    "topic": "ECMO",
+    "title": "Multisite Venovenous Cannulation for ECMO in Neonates and Infants",
+    "questions": [
+      {
+        "id": "multisitecann_q1",
+        "stem": "In the ELSO registry study of neonates and infants younger than 1 year supported with VV ECMO (2013–2023), how did venovenous multisite (VVMS) cannulation compare with venovenous dual-lumen (VVDL) cannulation at 24 hours of support?",
+        "choices": {
+          "A": "VVMS was associated with significantly higher oxygen saturation and higher ECMO flow than VVDL, in both neonates and infants",
+          "B": "VVMS was associated with significantly worse oxygenation and lower flows than VVDL",
+          "C": "There was no difference in oxygenation or flow between VVMS and VVDL in either age group",
+          "D": "VVMS could not be evaluated because no neonates in the registry received VVMS cannulation"
+        },
+        "correct": "A",
+        "explanation": "The ELSO registry analysis found that at 24 hours of ECMO, median oxygen saturation and ECMO flow were both significantly higher in the VVMS group than the VVDL group, in neonates and infants alike. After adjustment for confounders including ventilator settings and baseline oxygen saturation, VVMS remained independently associated with higher mean SaO2 (about 3.3 percentage points higher in both age groups), an effect the authors attributed largely to VVMS achieving higher ECMO flows than VVDL. This is consistent with earlier single-center reports and supports VVMS as a physiologically effective alternative cannulation strategy in this population."
+      },
+      {
+        "id": "multisitecann_q2",
+        "stem": "The same ELSO registry study also evaluated the association between cannulation technique and clinical safety outcomes. What did the investigators find regarding complications and mortality?",
+        "choices": {
+          "A": "VVMS was associated with significantly higher mortality in both neonates and infants",
+          "B": "The investigators failed to identify an association between cannulation technique and mortality in either age group; in infants specifically, VVMS was associated with a lower rate of mechanical complications than VVDL",
+          "C": "VVMS was associated with a significantly higher rate of cannulation-site infections",
+          "D": "VVDL was associated with fewer complications than VVMS in every complication subcategory analyzed"
+        },
+        "correct": "B",
+        "explanation": "Across the full 2013–2023 registry cohort, cannulation technique was not associated with a significant difference in in-hospital mortality for either neonates or infants (adjusted odds ratios close to 1.0 in both groups). However, in infants, VVMS was associated with a significantly lower proportion of mechanical complications than VVDL (23% vs. 37%). No significant safety signal favored one technique over the other in neonates specifically, but the overall pattern — comparable mortality with a possible mechanical-complication advantage for VVMS in infants — supports VVMS as at least as safe as VVDL in this population."
+      },
+      {
+        "id": "multisitecann_q3",
+        "stem": "Lillie et al's single-center case series (PCCM 2021) described jugular-to-femoral multisite VV ECMO cannulation in 11 neonates and young infants weighing less than 10 kg (smallest patient 2.1 kg). What was the key safety finding regarding the femoral cannulation site?",
+        "choices": {
+          "A": "Femoral cannulation was abandoned partway through the series due to an unacceptably high rate of limb ischemia",
+          "B": "The common femoral vein was occluded on ultrasound in essentially all patients after decannulation, but no patient had a clinical or functional limb deficit at follow-up of at least 1 year",
+          "C": "All patients required surgical vascular reconstruction of the femoral vein before hospital discharge",
+          "D": "Femoral vein occlusion resolved spontaneously within 48 hours in every patient with no need for anticoagulation"
+        },
+        "correct": "B",
+        "explanation": "On post-decannulation ultrasound, the common femoral vein was occluded in essentially all patients in this series, and external iliac vein thrombosis was seen in about half. Patients received a course of low-molecular-weight heparin and developed good collateral flow into the IVC over subsequent weeks. Despite this vascular occlusion, examination of the cannulated leg was normal in every case, and at a minimum of 1 year of follow-up there was no clinical or functional deficit, no limb-length discrepancy, and no ischemic injury. This finding directly challenged the prior assumption in ECMO guidance that femoral veins in nonambulatory infants were categorically too small or too risky to cannulate."
+      },
+      {
+        "id": "multisitecann_q4",
+        "stem": "Considered together, how do the 2021 single-center case series and the 2013–2023 ELSO registry study relate to each other in the evidence base for multisite VV cannulation in small infants?",
+        "choices": {
+          "A": "They contradict each other — the single-center study found VVMS unsafe while the registry study found it safe",
+          "B": "The single-center case series established feasibility and an acceptable safety profile (including vascular occlusion without long-term limb morbidity) in very small patients down to 2.1 kg, which the subsequent multicenter ELSO registry analysis then validated at scale, showing VVMS associated with better 24-hour oxygenation and flow and, in infants, fewer mechanical complications than VVDL",
+          "C": "Both studies focused exclusively on adult ECMO cannulation and have no bearing on neonatal or infant practice",
+          "D": "The registry study showed that the technique described in the single-center series could not be reproduced at any other center"
+        },
+        "correct": "B",
+        "explanation": "These two papers illustrate a common evidence-development pattern in critical care: a single-center pilot series demonstrates that a technique once considered too risky — multisite VV cannulation in infants under 10 kg — is technically feasible and does not cause long-term limb morbidity despite vascular occlusion, directly challenging prior ELSO guidance. A larger multicenter registry study then tests the same question at scale, confirming that VVMS achieves better oxygenation and flow than VVDL and, in infants, fewer mechanical complications, with no difference in mortality. Together they trace how VVMS moved from an unproven, discouraged alternative to a validated cannulation strategy for neonates and infants who might otherwise default to VA ECMO or a dual-lumen catheter with its own recognized risks (e.g., cardiac perforation)."
+      }
+    ]
+  },
+  {
+    "week": 16,
     "topic": "Transfusion",
     "title": "Massive Transfusion Protocols in Pediatric Trauma",
     "questions": [
@@ -2623,7 +2711,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 16,
+    "week": 17,
     "topic": "Nutrition",
     "title": "Timing of Parenteral Nutrition in Critical Illness",
     "questions": [
@@ -2666,7 +2754,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 17,
+    "week": 18,
     "topic": "AKI",
     "title": "Epidemiology of Pediatric AKI",
     "questions": [
@@ -2709,7 +2797,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 18,
+    "week": 19,
     "topic": "ECMO",
     "title": "ECMO Anticoagulation and Coagulation Management",
     "questions": [
@@ -2752,7 +2840,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 19,
+    "week": 20,
     "topic": "ARDS",
     "title": "High-Frequency Oscillatory Ventilation in ARDS/PARDS",
     "questions": [
@@ -2807,7 +2895,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 20,
+    "week": 21,
     "topic": "Neonatal Hemodynamics",
     "title": "Neonatal Hemodynamics",
     "questions": [
@@ -2850,7 +2938,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 21,
+    "week": 22,
     "topic": "Transfusion",
     "title": "Age of Transfused Blood",
     "questions": [
@@ -2893,7 +2981,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 22,
+    "week": 23,
     "topic": "Sepsis",
     "title": "Early Goal-Directed Therapy — Rise and Fall of a Sepsis Paradigm",
     "questions": [
@@ -2960,7 +3048,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 23,
+    "week": 24,
     "topic": "Delirium",
     "title": "PICU Delirium and Post-TBI Tracheostomy",
     "questions": [
@@ -3015,7 +3103,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 24,
+    "week": 25,
     "topic": "ECMO",
     "title": "ECMO as Rescue Therapy in Severe ARDS",
     "questions": [
@@ -3070,7 +3158,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 25,
+    "week": 26,
     "topic": "Nutrition",
     "title": "Enteral Nutrition During Vasopressor Support",
     "questions": [
@@ -3113,7 +3201,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 26,
+    "week": 27,
     "topic": "AKI/Neonatal",
     "title": "Neonatal AKI Epidemiology (AWAKEN)",
     "questions": [
@@ -3156,7 +3244,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 27,
+    "week": 28,
     "topic": "ARDS",
     "title": "Defining Pediatric ARDS (PALICC)",
     "questions": [
@@ -3199,7 +3287,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 28,
+    "week": 29,
     "topic": "TBI",
     "title": "Severe Traumatic Brain Injury Guidelines",
     "questions": [
@@ -3254,7 +3342,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 29,
+    "week": 30,
     "topic": "Delirium/Sedation",
     "title": "ICU Liberation: the ABCDEF Bundle and Pediatric Sedation Guidelines",
     "questions": [
@@ -3309,7 +3397,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 30,
+    "week": 31,
     "topic": "Transfusion",
     "title": "Pediatric Transfusion Consensus Guidelines (TAXI)",
     "questions": [
@@ -3352,7 +3440,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 31,
+    "week": 32,
     "topic": "Transfusion",
     "title": "Tranexamic Acid in Trauma",
     "questions": [
@@ -3407,7 +3495,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 32,
+    "week": 33,
     "topic": "Sepsis/ECMO",
     "title": "VA-ECMO in Septic Shock",
     "questions": [
@@ -3450,7 +3538,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 33,
+    "week": 34,
     "topic": "Endocrine",
     "title": "Corticosteroids in Adult Septic Shock (ADRENAL)",
     "questions": [
@@ -3493,7 +3581,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 34,
+    "week": 35,
     "topic": "ARDS",
     "title": "Pediatric Tracheostomy: Timing and Outcomes",
     "questions": [
@@ -3536,7 +3624,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 35,
+    "week": 36,
     "topic": "Transfusion",
     "title": "Bleeding Assessment and Institutional ECMO Experience",
     "questions": [
@@ -3579,7 +3667,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 36,
+    "week": 37,
     "topic": "AKI/Dosing",
     "title": "CRRT Dosing/Intensity",
     "questions": [
@@ -3622,7 +3710,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 37,
+    "week": 38,
     "topic": "ARDS",
     "title": "Neuromuscular Blockade in ARDS",
     "questions": [
@@ -3677,7 +3765,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 38,
+    "week": 39,
     "topic": "PODIUM",
     "title": "Defining Pediatric Organ Dysfunction: The PODIUM Consensus Criteria",
     "questions": [
@@ -3732,7 +3820,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 39,
+    "week": 40,
     "topic": "Acute Liver Failure",
     "title": "Acute Liver Failure in Children: Multidisciplinary Management",
     "questions": [
@@ -3775,7 +3863,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 40,
+    "week": 41,
     "topic": "Sepsis",
     "title": "Pediatric Sepsis: Guidelines and the New Phoenix Criteria",
     "questions": [
@@ -3830,7 +3918,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 41,
+    "week": 42,
     "topic": "Transfusion",
     "title": "Whole Blood Resuscitation in Trauma",
     "questions": [
@@ -3885,7 +3973,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 42,
+    "week": 43,
     "topic": "ECMO",
     "title": "Extracorporeal Cardiopulmonary Resuscitation (ECPR)",
     "questions": [
@@ -3928,7 +4016,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 43,
+    "week": 44,
     "topic": "ARDS",
     "title": "Surfactant Therapy in PARDS",
     "questions": [
@@ -3972,4 +4060,4 @@ const QUESTIONS_DATA = [
   }
 ];
 
-const QUESTIONS_SOURCE = "full_43week";
+const QUESTIONS_SOURCE = "full_44week";
