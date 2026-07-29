@@ -1,14 +1,19 @@
 // PDSCC Curriculum Site — app.js
 // Renders everything client-side from data embedded in data.js (WEEKS_DATA, MANIFEST_DATA, QUESTIONS_DATA).
-// No fetch(), no network calls — must work from file:// with a plain double-click on index.html.
+// Quiz-tracking (sign-in + score history) talks to a Google Apps Script Web App endpoint;
+// everything else still works fully offline from file://.
 
 (function () {
   "use strict";
+
+  var TRACKING_ENDPOINT = "https://script.google.com/macros/s/AKfycby_OhqgYU-uWPflW8X_s_F1cnzarcYQoZTbSLIejVfb4zE1nhJyzuNEP5-qOJD46aoU/exec";
+  var USER_STORAGE_KEY = "pdscc_user";
 
   var root = document.getElementById("app-root");
   var toolbar = document.getElementById("toolbar");
   var searchInput = document.getElementById("search-input");
   var topicFiltersEl = document.getElementById("topic-filters");
+  var userBar = document.getElementById("user-bar");
   var navButtons = document.querySelectorAll(".nav-btn");
   var brandHome = document.getElementById("brand-home");
 
@@ -20,12 +25,190 @@
   };
 
   var state = {
-    view: "weeks", // 'weeks' | 'weekDetail' | 'quiz' | 'quizSummary'
+    view: "weeks", // 'weeks' | 'weekDetail' | 'quiz' | 'quizSummary' | 'progress'
     searchText: "",
     selectedTopic: null,
     currentWeekNum: null,
-    quiz: null // { weekNum, questions, index, selected, revealed, answers: [] }
+    quiz: null, // { weekNum, questions, index, selected, revealed, answers: [], submitted }
+    user: null, // { name, email }
+    trackingRecords: [], // records for the signed-in user, from the Sheet
+    trackingLoading: false,
+    trackingError: null
   };
+
+  // ---------------- Tracking: user + Sheet sync ----------------
+
+  function loadUser() {
+    try {
+      var raw = localStorage.getItem(USER_STORAGE_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function saveUser(user) {
+    try {
+      localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(user));
+    } catch (e) { /* ignore storage errors */ }
+  }
+
+  function clearUser() {
+    try {
+      localStorage.removeItem(USER_STORAGE_KEY);
+    } catch (e) { /* ignore */ }
+    state.user = null;
+    state.trackingRecords = [];
+  }
+
+  function normalizeEmail(email) {
+    return (email || "").trim().toLowerCase();
+  }
+
+  function fetchTrackingRecords(callback) {
+    if (!state.user || !TRACKING_ENDPOINT) { callback && callback(); return; }
+    state.trackingLoading = true;
+    state.trackingError = null;
+    fetch(TRACKING_ENDPOINT)
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var email = normalizeEmail(state.user.email);
+        var records = (data && data.records) || [];
+        state.trackingRecords = records.filter(function (r) {
+          return normalizeEmail(r.Email) === email;
+        });
+        state.trackingLoading = false;
+      })
+      .catch(function (err) {
+        state.trackingLoading = false;
+        state.trackingError = "Couldn't load your saved progress (offline or blocked). New scores will still be recorded when you're back online.";
+      })
+      .then(function () { callback && callback(); });
+  }
+
+  function submitQuizResult(weekNum, title, score, total) {
+    if (!state.user) return;
+    var record = {
+      name: state.user.name,
+      email: state.user.email,
+      week: weekNum,
+      score: score,
+      total: total
+    };
+    // Optimistically reflect it locally right away.
+    state.trackingRecords.push({
+      Timestamp: new Date().toString(),
+      Name: state.user.name,
+      Email: state.user.email,
+      Week: weekNum,
+      Score: score,
+      Total: total
+    });
+    if (!TRACKING_ENDPOINT) return;
+    fetch(TRACKING_ENDPOINT, {
+      method: "POST",
+      body: JSON.stringify(record)
+    }).catch(function () { /* best-effort; local copy already recorded */ });
+  }
+
+  function bestScoreByWeek() {
+    var best = {};
+    state.trackingRecords.forEach(function (r) {
+      var wk = parseInt(r.Week, 10);
+      var score = parseInt(r.Score, 10);
+      var total = parseInt(r.Total, 10);
+      if (!wk || isNaN(score)) return;
+      if (!best[wk] || score > best[wk].score) {
+        best[wk] = { score: score, total: total };
+      }
+    });
+    return best;
+  }
+
+  // ---------------- Rendering: user bar (sign in / progress summary) ----------------
+
+  function renderUserBar() {
+    if (!userBar) return;
+    if (!state.user) {
+      userBar.innerHTML =
+        '<form class="signin-form" id="signin-form">' +
+        '<span class="signin-label">Sign in to track your quiz scores:</span>' +
+        '<input type="text" id="signin-name" placeholder="Your name" autocomplete="name" required>' +
+        '<input type="email" id="signin-email" placeholder="Your email" autocomplete="email" required>' +
+        '<button type="submit" class="btn btn-primary btn-sm">Sign In</button>' +
+        '</form>';
+      var form = document.getElementById("signin-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("signin-name").value.trim();
+        var email = document.getElementById("signin-email").value.trim();
+        if (!name || !email) return;
+        state.user = { name: name, email: email };
+        saveUser(state.user);
+        renderUserBar();
+        fetchTrackingRecords(function () { render(); });
+      });
+      return;
+    }
+
+    var best = bestScoreByWeek();
+    var completed = Object.keys(best).length;
+    userBar.innerHTML =
+      '<div class="signed-in-bar">' +
+      '<span class="signed-in-label">Signed in as <strong>' + esc(state.user.name) + '</strong> (' + esc(state.user.email) + ')</span>' +
+      '<span class="signed-in-progress">' + completed + ' / ' + WEEKS_DATA.length + ' weeks completed</span>' +
+      '<button class="link-btn" id="switch-user-btn">Switch user</button>' +
+      '</div>';
+    var switchBtn = document.getElementById("switch-user-btn");
+    if (switchBtn) {
+      switchBtn.addEventListener("click", function () {
+        clearUser();
+        renderUserBar();
+        render();
+      });
+    }
+  }
+
+  // ---------------- Rendering: My Progress view ----------------
+
+  function renderProgressView() {
+    if (!state.user) {
+      root.innerHTML = '<div class="empty-state">Sign in above to start tracking your quiz scores and completed weeks.</div>';
+      return;
+    }
+    var best = bestScoreByWeek();
+    var completed = Object.keys(best).length;
+    var html = "";
+    html += '<div class="result-count">' + completed + ' of ' + WEEKS_DATA.length + ' weeks completed for <strong>' + esc(state.user.name) + '</strong></div>';
+    if (state.trackingLoading) {
+      html += '<div class="empty-state">Loading your saved progress&hellip;</div>';
+    }
+    if (state.trackingError) {
+      html += '<div class="empty-state">' + esc(state.trackingError) + '</div>';
+    }
+    html += '<div class="progress-list">';
+    WEEKS_DATA.forEach(function (w) {
+      var b = best[w.week];
+      var statusHtml = b
+        ? '<span class="progress-score">' + b.score + ' / ' + b.total + '</span>'
+        : '<span class="progress-pending">Not yet attempted</span>';
+      html += '<div class="progress-row' + (b ? " done" : "") + '" data-week="' + w.week + '">' +
+        '<span class="progress-week">Week ' + w.week + '</span>' +
+        '<span class="progress-title">' + esc(w.title) + '</span>' +
+        statusHtml +
+        '</div>';
+    });
+    html += "</div>";
+    root.innerHTML = html;
+
+    Array.prototype.forEach.call(root.querySelectorAll(".progress-row"), function (row) {
+      row.addEventListener("click", function () {
+        state.currentWeekNum = parseInt(row.getAttribute("data-week"), 10);
+        state.view = "weekDetail";
+        render();
+      });
+    });
+  }
 
   // ---------------- Utilities ----------------
 
@@ -135,11 +318,13 @@
     if (weeks.length === 0) {
       html += '<div class="empty-state">No weeks match your search/filter.</div>';
     } else {
+      var best = bestScoreByWeek();
       html += '<div class="week-grid">';
       weeks.forEach(function (w) {
-        html += '<div class="week-card" data-week="' + w.week + '">' +
+        var done = best[w.week];
+        html += '<div class="week-card' + (done ? " week-done" : "") + '" data-week="' + w.week + '">' +
           '<div class="week-card-top"><span class="week-number">Week ' + w.week + '</span>' +
-          '<span class="paper-count">' + (w.papers ? w.papers.length : 0) + ' paper' + ((w.papers && w.papers.length === 1) ? "" : "s") + '</span></div>' +
+          (done ? '<span class="week-done-badge" title="Completed &mdash; ' + done.score + '/' + done.total + '">&#10003; ' + done.score + '/' + done.total + '</span>' : '<span class="paper-count">' + (w.papers ? w.papers.length : 0) + ' paper' + ((w.papers && w.papers.length === 1) ? "" : "s") + '</span>') + '</div>' +
           '<div class="week-card-title">' + esc(w.title) + '</div>' +
           '<div class="week-card-tags">' + topicTokens(w.topic).map(function (t) { return '<span class="topic-tag">' + esc(t) + '</span>'; }).join("") + '</div>' +
           '<div class="pop-dot-row">' + popDots(w) + '</div>' +
@@ -399,6 +584,11 @@
             quiz.revealed = false;
             renderQuizView();
           } else {
+            if (!quiz.submitted) {
+              quiz.submitted = true;
+              var finalScore = quiz.answers.filter(function (a) { return a.isRight; }).length;
+              submitQuizResult(quiz.weekNum, quiz.title, finalScore, quiz.answers.length);
+            }
             state.view = "quizSummary";
             render();
           }
@@ -451,9 +641,13 @@
   // ---------------- Master render ----------------
 
   function render() {
+    var navMap = { weeks: "weeks", progress: "progress" };
+    var activeNav = navMap[state.view] || "weeks"; // weekDetail/quiz/quizSummary count as "weeks"
     navButtons.forEach(function (btn) {
-      btn.classList.add("active");
+      btn.classList.toggle("active", btn.getAttribute("data-nav") === activeNav);
     });
+
+    renderUserBar();
 
     if (state.view === "weeks") {
       toolbar.classList.remove("hidden");
@@ -468,6 +662,9 @@
     } else if (state.view === "quizSummary") {
       toolbar.classList.add("hidden");
       renderQuizSummary();
+    } else if (state.view === "progress") {
+      toolbar.classList.add("hidden");
+      renderProgressView();
     }
     window.scrollTo(0, 0);
   }
@@ -482,7 +679,8 @@
 
   navButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      state.view = "weeks";
+      var nav = btn.getAttribute("data-nav");
+      state.view = nav === "progress" ? "progress" : "weeks";
       render();
     });
   });
@@ -497,5 +695,11 @@
 
   // ---------------- Init ----------------
 
-  render();
+  state.user = loadUser();
+  renderUserBar();
+  if (state.user) {
+    fetchTrackingRecords(function () { render(); });
+  } else {
+    render();
+  }
 })();
