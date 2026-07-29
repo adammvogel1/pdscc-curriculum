@@ -3,7 +3,7 @@ const WEEKS_DATA = [
   {
     "week": 1,
     "topic": "ECMO",
-    "title": "ECMO for Meconium Aspiration Syndrome \u2014 the UK Collaborative Trial",
+    "title": "ECMO for Meconium Aspiration Syndrome — the UK Collaborative Trial",
     "papers": [
       {
         "filename": "KPL ECMO MAS ASAIO 2007.pdf",
@@ -40,13 +40,13 @@ const WEEKS_DATA = [
         "filename": "ARDSNET TidalVolumes NEJM 2000.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/ARDSNET TidalVolumes NEJM 2000.pdf",
         "population": "adult",
-        "description": "ARMA trial \u2014 low tidal volume (ARDSNet)"
+        "description": "ARMA trial — low tidal volume (ARDSNet)"
       },
       {
         "filename": "ARDSNET PEEP NEJM 2004.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/ARDSNET PEEP NEJM 2004.pdf",
         "population": "adult",
-        "description": "ALVEOLI trial \u2014 higher vs lower PEEP"
+        "description": "ALVEOLI trial — higher vs lower PEEP"
       }
     ]
   },
@@ -96,28 +96,60 @@ const WEEKS_DATA = [
         "filename": "Initial_Laparotomy_Versus_Peritoneal_Drainage_in.93407.pdf",
         "relative_path": "PDSCC_Library/NEC/Initial_Laparotomy_Versus_Peritoneal_Drainage_in.93407.pdf",
         "population": "neonatal",
-        "description": "NEST trial \u2014 initial laparotomy vs. peritoneal drainage in ELBW infants with perforated NEC/SIP (Moss et al, NEJM 2006)"
+        "description": "NEST trial — initial laparotomy vs. peritoneal drainage in ELBW infants with perforated NEC/SIP (Moss et al, NEJM 2006)"
       }
     ],
     "week": 5
   },
   {
     "week": 6,
+    "topic": "Fluids",
+    "title": "Fluid Resuscitation in Adult Critical Illness: Crystalloid and Colloid Strategies",
+    "papers": [
+      {
+        "filename": "ALBIOS NEJM 2014.pdf",
+        "relative_path": "PDSCC_Library/Sepsis/ALBIOS NEJM 2014.pdf",
+        "population": "adult",
+        "description": "ALBIOS — albumin in severe sepsis"
+      },
+      {
+        "filename": "SAFE NEJM 2004.pdf",
+        "relative_path": "PDSCC_Library/Fluids/SAFE NEJM 2004.pdf",
+        "population": "adult",
+        "description": "SAFE — saline vs albumin resuscitation"
+      },
+      {
+        "filename": "Balanced Crystalloids vs Saline NEJM 2018.pdf",
+        "relative_path": "PDSCC_Library/Fluids/Balanced Crystalloids vs Saline NEJM 2018.pdf",
+        "population": "adult",
+        "description": "SMART — balanced crystalloids vs saline"
+      }
+    ]
+  },
+  {
+    "week": 7,
     "topic": "Transfusion",
-    "title": "Transfusion and Fluid Resuscitation Across the Age Spectrum",
+    "title": "Restrictive vs. Liberal RBC Transfusion Thresholds in Critically Ill Children — the TRIPICU Trial",
     "papers": [
       {
         "filename": "TRIPICU NEJM 2007.pdf",
         "relative_path": "PDSCC_Library/Transfusion/TRIPICU NEJM 2007.pdf",
         "population": "peds",
-        "description": "TRIPICU \u2014 restrictive vs liberal PICU RBC threshold"
+        "description": "TRIPICU — restrictive vs liberal PICU RBC threshold"
       },
       {
         "filename": "TRIPICU Surgery AnnSurg 2010.pdf",
         "relative_path": "PDSCC_Library/Transfusion/TRIPICU Surgery AnnSurg 2010.pdf",
         "population": "peds",
         "description": "TRIPICU surgical subgroup"
-      },
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "topic": "Transfusion/Neonatal",
+    "title": "Neonatal RBC and Platelet Transfusion Thresholds",
+    "papers": [
       {
         "filename": "Neonatal RBC Transfusion NEJM 2020.pdf",
         "relative_path": "PDSCC_Library/Transfusion/Neonatal RBC Transfusion NEJM 2020.pdf",
@@ -134,36 +166,18 @@ const WEEKS_DATA = [
         "filename": "Neonatal Platelet Transfusion NEJM 2020.pdf",
         "relative_path": "PDSCC_Library/Transfusion/Neonatal Platelet Transfusion NEJM 2020.pdf",
         "population": "neonatal",
-        "description": "PlaNeT-2 \u2014 platelet transfusion threshold"
+        "description": "PlaNeT-2 — platelet transfusion threshold"
       },
       {
         "filename": "RBC Transfusion Thresholds in Neonates-Huidlines JAMAOpen 2024.pdf",
         "relative_path": "PDSCC_Library/Transfusion/RBC Transfusion Thresholds in Neonates-Huidlines JAMAOpen 2024.pdf",
         "population": "neonatal",
         "description": "2024 neonatal RBC transfusion guideline"
-      },
-      {
-        "filename": "ALBIOS NEJM 2014.pdf",
-        "relative_path": "PDSCC_Library/Sepsis/ALBIOS NEJM 2014.pdf",
-        "population": "adult",
-        "description": "ALBIOS \u2014 albumin in severe sepsis"
-      },
-      {
-        "filename": "SAFE NEJM 2004.pdf",
-        "relative_path": "PDSCC_Library/Fluids/SAFE NEJM 2004.pdf",
-        "population": "adult",
-        "description": "SAFE \u2014 saline vs albumin resuscitation"
-      },
-      {
-        "filename": "Balanced Crystalloids vs Saline NEJM 2018.pdf",
-        "relative_path": "PDSCC_Library/Fluids/Balanced Crystalloids vs Saline NEJM 2018.pdf",
-        "population": "adult",
-        "description": "SMART \u2014 balanced crystalloids vs saline"
       }
     ]
   },
   {
-    "week": 7,
+    "week": 9,
     "topic": "ECMO",
     "title": "Bleeding and Thrombosis on ECMO",
     "papers": [
@@ -171,12 +185,12 @@ const WEEKS_DATA = [
         "filename": "BATE ECMO ARJCCM 2017.pdf",
         "relative_path": "PDSCC_Library/ECMO/BATE ECMO ARJCCM 2017.pdf",
         "population": "adult",
-        "description": "BATE \u2014 bleeding/thrombosis on ECMO"
+        "description": "BATE — bleeding/thrombosis on ECMO"
       }
     ]
   },
   {
-    "week": 8,
+    "week": 10,
     "topic": "AKI/Timing",
     "title": "Timing of Renal Replacement Therapy in AKI",
     "papers": [
@@ -184,7 +198,7 @@ const WEEKS_DATA = [
         "filename": "STARRT-AKI NEJM 2020.pdf",
         "relative_path": "PDSCC_Library/AKI/STARRT-AKI NEJM 2020.pdf",
         "population": "adult",
-        "description": "STARRT-AKI \u2014 timing of RRT initiation"
+        "description": "STARRT-AKI — timing of RRT initiation"
       },
       {
         "filename": "peds CRRT timing Jama 2024.pdf",
@@ -195,7 +209,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 9,
+    "week": 11,
     "topic": "ARDS",
     "title": "Corticosteroids in ARDS/PARDS",
     "papers": [
@@ -203,7 +217,7 @@ const WEEKS_DATA = [
         "filename": "ARDSNET Steroids NEJM 2006.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/ARDSNET Steroids NEJM 2006.pdf",
         "population": "adult",
-        "description": "LaSRS \u2014 late steroids in ARDS"
+        "description": "LaSRS — late steroids in ARDS"
       },
       {
         "filename": "steroids PARDS ICM 2015.pdf",
@@ -226,7 +240,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 10,
+    "week": 12,
     "topic": "Delirium/Sedation",
     "title": "Sedation Protocols and Early Mobility in the PICU",
     "papers": [
@@ -234,7 +248,7 @@ const WEEKS_DATA = [
         "filename": "RESTORE JAMA 2015.pdf",
         "relative_path": "PDSCC_Library/Delirium_Sedation/RESTORE JAMA 2015.pdf",
         "population": "peds",
-        "description": "RESTORE \u2014 sedation protocol RCT in PICU"
+        "description": "RESTORE — sedation protocol RCT in PICU"
       },
       {
         "filename": "ERT PCCM 2009.pdf",
@@ -245,7 +259,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 11,
+    "week": 13,
     "topic": "Endocrine",
     "title": "Glycemic Control in Critical Illness",
     "papers": [
@@ -253,18 +267,18 @@ const WEEKS_DATA = [
         "filename": "NICE-SUGAR NEJM 2009.pdf",
         "relative_path": "PDSCC_Library/Endocrine/NICE-SUGAR NEJM 2009.pdf",
         "population": "adult",
-        "description": "NICE-SUGAR \u2014 intensive vs conventional glucose control"
+        "description": "NICE-SUGAR — intensive vs conventional glucose control"
       },
       {
         "filename": "HALF-PINT NEJM 2017.pdf",
         "relative_path": "PDSCC_Library/Endocrine/HALF-PINT NEJM 2017.pdf",
         "population": "peds",
-        "description": "HALF-PINT \u2014 pediatric glycemic control RCT"
+        "description": "HALF-PINT — pediatric glycemic control RCT"
       }
     ]
   },
   {
-    "week": 12,
+    "week": 14,
     "topic": "ECMO",
     "title": "Peripheral ECMO Cannulation and Vascular Complications",
     "papers": [
@@ -283,7 +297,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 13,
+    "week": 15,
     "topic": "Transfusion",
     "title": "Massive Transfusion Protocols in Pediatric Trauma",
     "papers": [
@@ -291,7 +305,7 @@ const WEEKS_DATA = [
         "filename": "MATIC Epidemiology CCM 2021.pdf",
         "relative_path": "PDSCC_Library/Transfusion/MATIC Epidemiology CCM 2021.pdf",
         "population": "peds",
-        "description": "MATIC \u2014 massive transfusion epidemiology in children"
+        "description": "MATIC — massive transfusion epidemiology in children"
       },
       {
         "filename": "Peds MTP JTrauma 2019.pdf",
@@ -302,7 +316,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 14,
+    "week": 16,
     "topic": "Nutrition",
     "title": "Timing of Parenteral Nutrition in Critical Illness",
     "papers": [
@@ -310,12 +324,12 @@ const WEEKS_DATA = [
         "filename": "Early vs Late TPN Peds NEJM 2016.pdf",
         "relative_path": "PDSCC_Library/Nutrition/Early vs Late TPN Peds NEJM 2016.pdf",
         "population": "peds",
-        "description": "PEPaNIC \u2014 early vs late PN in critically ill children"
+        "description": "PEPaNIC — early vs late PN in critically ill children"
       }
     ]
   },
   {
-    "week": 15,
+    "week": 17,
     "topic": "AKI",
     "title": "Epidemiology of Pediatric AKI",
     "papers": [
@@ -323,7 +337,7 @@ const WEEKS_DATA = [
         "filename": "Peds AKI NEJM 2017.pdf",
         "relative_path": "PDSCC_Library/AKI/Peds AKI NEJM 2017.pdf",
         "population": "peds",
-        "description": "AWARE \u2014 pediatric AKI epidemiology"
+        "description": "AWARE — pediatric AKI epidemiology"
       },
       {
         "filename": "peds CRRT timing Jama 2024.pdf",
@@ -334,7 +348,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 16,
+    "week": 18,
     "topic": "ECMO",
     "title": "ECMO Anticoagulation and Coagulation Management",
     "papers": [
@@ -347,7 +361,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 17,
+    "week": 19,
     "topic": "ARDS",
     "title": "High-Frequency Oscillatory Ventilation in ARDS/PARDS",
     "papers": [
@@ -355,13 +369,13 @@ const WEEKS_DATA = [
         "filename": "HFOV OSCIALATE NEJM 2013.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/HFOV OSCIALATE NEJM 2013.pdf",
         "population": "adult",
-        "description": "OSCILLATE \u2014 HFOV in adult ARDS"
+        "description": "OSCILLATE — HFOV in adult ARDS"
       },
       {
         "filename": "HFOV OSCAR NEJM 2013.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/HFOV OSCAR NEJM 2013.pdf",
         "population": "adult",
-        "description": "OSCAR \u2014 HFOV in adult ARDS"
+        "description": "OSCAR — HFOV in adult ARDS"
       },
       {
         "filename": "HFOV PARDS CC 2020.pdf",
@@ -373,12 +387,12 @@ const WEEKS_DATA = [
         "filename": "HFOV PARDS Meta PedsPulm 2021.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/HFOV PARDS Meta PedsPulm 2021.pdf",
         "population": "peds",
-        "description": "HFOV in PARDS \u2014 meta-analysis"
+        "description": "HFOV in PARDS — meta-analysis"
       }
     ]
   },
   {
-    "week": 18,
+    "week": 20,
     "topic": "Neonatal Hemodynamics",
     "title": "Neonatal Hemodynamics",
     "papers": [
@@ -391,7 +405,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 19,
+    "week": 21,
     "topic": "Transfusion",
     "title": "Age of Transfused Blood",
     "papers": [
@@ -399,49 +413,49 @@ const WEEKS_DATA = [
         "filename": "ABC PICU JAMA 2019.pdf",
         "relative_path": "PDSCC_Library/Transfusion/ABC PICU JAMA 2019.pdf",
         "population": "peds",
-        "description": "ABC-PICU \u2014 age of transfused blood in children"
+        "description": "ABC-PICU — age of transfused blood in children"
       }
     ]
   },
   {
-    "week": 20,
+    "week": 22,
     "topic": "Sepsis",
-    "title": "Early Goal-Directed Therapy \u2014 Rise and Fall of a Sepsis Paradigm",
+    "title": "Early Goal-Directed Therapy — Rise and Fall of a Sepsis Paradigm",
     "papers": [
       {
         "filename": "EGDT-PRISM Sepsis Meta Analysis NEJM 2017.pdf",
         "relative_path": "PDSCC_Library/Sepsis/EGDT-PRISM Sepsis Meta Analysis NEJM 2017.pdf",
         "population": "adult",
-        "description": "PRISM \u2014 individual-patient meta-analysis of EGDT trials"
+        "description": "PRISM — individual-patient meta-analysis of EGDT trials"
       },
       {
         "filename": "PROMISE NEJM 2015.pdf",
         "relative_path": "PDSCC_Library/Sepsis/PROMISE NEJM 2015.pdf",
         "population": "adult",
-        "description": "ProMISe \u2014 EGDT trial (UK)"
+        "description": "ProMISe — EGDT trial (UK)"
       },
       {
         "filename": "PROCESS NEJM 2014.pdf",
         "relative_path": "PDSCC_Library/Sepsis/PROCESS NEJM 2014.pdf",
         "population": "adult",
-        "description": "ProCESS \u2014 EGDT trial (US)"
+        "description": "ProCESS — EGDT trial (US)"
       },
       {
         "filename": "ARISE NEJM 2014.pdf",
         "relative_path": "PDSCC_Library/Sepsis/ARISE NEJM 2014.pdf",
         "population": "adult",
-        "description": "ARISE \u2014 EGDT trial (Australia/NZ)"
+        "description": "ARISE — EGDT trial (Australia/NZ)"
       },
       {
         "filename": "Rivers Sepsis NEJM 2001.pdf",
         "relative_path": "PDSCC_Library/Sepsis/Rivers Sepsis NEJM 2001.pdf",
         "population": "adult",
-        "description": "Rivers \u2014 original EGDT trial (2001)"
+        "description": "Rivers — original EGDT trial (2001)"
       }
     ]
   },
   {
-    "week": 21,
+    "week": 23,
     "topic": "Delirium",
     "title": "PICU Delirium and Post-TBI Tracheostomy",
     "papers": [
@@ -449,7 +463,7 @@ const WEEKS_DATA = [
         "filename": "PARK PICU CCM 2021.pdf",
         "relative_path": "PDSCC_Library/Delirium_Sedation/PARK PICU CCM 2021.pdf",
         "population": "peds",
-        "description": "PARK-PICU \u2014 delirium prevalence in PICU"
+        "description": "PARK-PICU — delirium prevalence in PICU"
       },
       {
         "filename": "Peds TBI trach JTACS 2019.pdf",
@@ -460,7 +474,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 22,
+    "week": 24,
     "topic": "ECMO",
     "title": "ECMO as Rescue Therapy in Severe ARDS",
     "papers": [
@@ -468,13 +482,13 @@ const WEEKS_DATA = [
         "filename": "CESAR Lancet 2009.pdf",
         "relative_path": "PDSCC_Library/ECMO/CESAR Lancet 2009.pdf",
         "population": "adult",
-        "description": "CESAR \u2014 conventional vs ECMO-based management"
+        "description": "CESAR — conventional vs ECMO-based management"
       },
       {
         "filename": "EOLIA NEJM 2018.pdf",
         "relative_path": "PDSCC_Library/ECMO/EOLIA NEJM 2018.pdf",
         "population": "adult",
-        "description": "EOLIA \u2014 early ECMO in severe ARDS"
+        "description": "EOLIA — early ECMO in severe ARDS"
       },
       {
         "filename": "EOLIA Bayesian analysis.pdf",
@@ -485,7 +499,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 23,
+    "week": 25,
     "topic": "Nutrition",
     "title": "Enteral Nutrition During Vasopressor Support",
     "papers": [
@@ -498,7 +512,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 24,
+    "week": 26,
     "topic": "AKI/Neonatal",
     "title": "Neonatal AKI Epidemiology (AWAKEN)",
     "papers": [
@@ -506,12 +520,12 @@ const WEEKS_DATA = [
         "filename": "AWAKEN Neonate Lancet 2017.pdf",
         "relative_path": "PDSCC_Library/AKI/AWAKEN Neonate Lancet 2017.pdf",
         "population": "neonatal",
-        "description": "AWAKEN \u2014 neonatal AKI epidemiology"
+        "description": "AWAKEN — neonatal AKI epidemiology"
       }
     ]
   },
   {
-    "week": 25,
+    "week": 27,
     "topic": "ARDS",
     "title": "Defining Pediatric ARDS (PALICC)",
     "papers": [
@@ -519,12 +533,12 @@ const WEEKS_DATA = [
         "filename": "PARDS PALICC PCCM 2015.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/PARDS PALICC PCCM 2015.pdf",
         "population": "peds",
-        "description": "PALICC \u2014 pediatric ARDS consensus definition"
+        "description": "PALICC — pediatric ARDS consensus definition"
       }
     ]
   },
   {
-    "week": 26,
+    "week": 28,
     "topic": "TBI",
     "title": "Severe Traumatic Brain Injury Guidelines",
     "papers": [
@@ -537,7 +551,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 27,
+    "week": 29,
     "topic": "Delirium/Sedation",
     "title": "ICU Liberation: the ABCDEF Bundle and Pediatric Sedation Guidelines",
     "papers": [
@@ -556,7 +570,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 28,
+    "week": 30,
     "topic": "Transfusion",
     "title": "Pediatric Transfusion Consensus Guidelines (TAXI)",
     "papers": [
@@ -564,12 +578,12 @@ const WEEKS_DATA = [
         "filename": "TAXI PCCM 2018.pdf",
         "relative_path": "PDSCC_Library/Transfusion/TAXI PCCM 2018.pdf",
         "population": "peds",
-        "description": "TAXI \u2014 pediatric transfusion consensus guideline"
+        "description": "TAXI — pediatric transfusion consensus guideline"
       }
     ]
   },
   {
-    "week": 29,
+    "week": 31,
     "topic": "Transfusion",
     "title": "Tranexamic Acid in Trauma",
     "papers": [
@@ -577,24 +591,24 @@ const WEEKS_DATA = [
         "filename": "MATIC Antifibrinolytic CCM 2021.pdf",
         "relative_path": "PDSCC_Library/Transfusion/MATIC Antifibrinolytic CCM 2021.pdf",
         "population": "peds",
-        "description": "MATIC \u2014 antifibrinolytic use in pediatric trauma"
+        "description": "MATIC — antifibrinolytic use in pediatric trauma"
       },
       {
         "filename": "CRASH-2.pdf",
         "relative_path": "PDSCC_Library/Transfusion/CRASH-2.pdf",
         "population": "adult",
-        "description": "CRASH-2 \u2014 TXA in trauma"
+        "description": "CRASH-2 — TXA in trauma"
       },
       {
         "filename": "CRASH-3.pdf",
         "relative_path": "PDSCC_Library/Transfusion/CRASH-3.pdf",
         "population": "adult",
-        "description": "CRASH-3 \u2014 TXA in traumatic brain injury"
+        "description": "CRASH-3 — TXA in traumatic brain injury"
       }
     ]
   },
   {
-    "week": 30,
+    "week": 32,
     "topic": "Sepsis/ECMO",
     "title": "VA-ECMO in Septic Shock",
     "papers": [
@@ -619,7 +633,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 31,
+    "week": 33,
     "topic": "Endocrine",
     "title": "Corticosteroids in Adult Septic Shock (ADRENAL)",
     "papers": [
@@ -627,12 +641,12 @@ const WEEKS_DATA = [
         "filename": "ADRENAL NEJM 2018.pdf",
         "relative_path": "PDSCC_Library/Endocrine/ADRENAL NEJM 2018.pdf",
         "population": "adult",
-        "description": "ADRENAL \u2014 hydrocortisone in septic shock"
+        "description": "ADRENAL — hydrocortisone in septic shock"
       }
     ]
   },
   {
-    "week": 32,
+    "week": 34,
     "topic": "ARDS",
     "title": "Pediatric Tracheostomy: Timing and Outcomes",
     "papers": [
@@ -645,7 +659,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 33,
+    "week": 35,
     "topic": "Transfusion",
     "title": "Bleeding Assessment and Institutional ECMO Experience",
     "papers": [
@@ -653,7 +667,7 @@ const WEEKS_DATA = [
         "filename": "BASIC PCCM 2019.pdf",
         "relative_path": "PDSCC_Library/Transfusion/BASIC PCCM 2019.pdf",
         "population": "peds",
-        "description": "BASIC \u2014 Bleeding Assessment Scale in Critically Ill Children"
+        "description": "BASIC — Bleeding Assessment Scale in Critically Ill Children"
       },
       {
         "filename": "TCH Bleeding Perfusion 2024.pdf",
@@ -670,7 +684,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 34,
+    "week": 36,
     "topic": "AKI/Dosing",
     "title": "CRRT Dosing/Intensity",
     "papers": [
@@ -678,12 +692,12 @@ const WEEKS_DATA = [
         "filename": "CRRT Dose NEJM 2009.pdf",
         "relative_path": "PDSCC_Library/AKI/CRRT Dose NEJM 2009.pdf",
         "population": "adult",
-        "description": "RENAL \u2014 CRRT intensity/dosing trial"
+        "description": "RENAL — CRRT intensity/dosing trial"
       }
     ]
   },
   {
-    "week": 35,
+    "week": 37,
     "topic": "ARDS",
     "title": "Neuromuscular Blockade in ARDS",
     "papers": [
@@ -691,13 +705,13 @@ const WEEKS_DATA = [
         "filename": "NMB ARDS NEJM 2019.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/NMB ARDS NEJM 2019.pdf",
         "population": "adult",
-        "description": "ROSE \u2014 early NMB in moderate-severe ARDS"
+        "description": "ROSE — early NMB in moderate-severe ARDS"
       },
       {
         "filename": "ACURASYS NEJM 2010.pdf",
         "relative_path": "PDSCC_Library/ARDS_Vent/ACURASYS NEJM 2010.pdf",
         "population": "adult",
-        "description": "ACURASYS \u2014 early NMB in severe ARDS"
+        "description": "ACURASYS — early NMB in severe ARDS"
       }
     ]
   },
@@ -709,28 +723,28 @@ const WEEKS_DATA = [
         "filename": "PODIUM Executuve Summary 2022.pdf",
         "relative_path": "PDSCC_Library/PODIUM/PODIUM Executuve Summary 2022.pdf",
         "population": "review",
-        "description": "PODIUM \u2014 executive summary, contemporary criteria for pediatric organ dysfunction"
+        "description": "PODIUM — executive summary, contemporary criteria for pediatric organ dysfunction"
       },
       {
         "filename": "PODIUM CV.pdf",
         "relative_path": "PDSCC_Library/PODIUM/PODIUM CV.pdf",
         "population": "review",
-        "description": "PODIUM \u2014 cardiovascular dysfunction criteria"
+        "description": "PODIUM — cardiovascular dysfunction criteria"
       },
       {
         "filename": "PODIUM Renal.pdf",
         "relative_path": "PDSCC_Library/PODIUM/PODIUM Renal.pdf",
         "population": "review",
-        "description": "PODIUM \u2014 renal dysfunction criteria"
+        "description": "PODIUM — renal dysfunction criteria"
       },
       {
         "filename": "PODIUM Respiratory.pdf",
         "relative_path": "PDSCC_Library/PODIUM/PODIUM Respiratory.pdf",
         "population": "review",
-        "description": "PODIUM \u2014 respiratory dysfunction criteria"
+        "description": "PODIUM — respiratory dysfunction criteria"
       }
     ],
-    "week": 36
+    "week": 38
   },
   {
     "topic": "Acute Liver Failure",
@@ -746,13 +760,13 @@ const WEEKS_DATA = [
         "filename": "PODIUM Liver.pdf",
         "relative_path": "PDSCC_Library/PODIUM/PODIUM Liver.pdf",
         "population": "review",
-        "description": "PODIUM \u2014 acute liver dysfunction criteria"
+        "description": "PODIUM — acute liver dysfunction criteria"
       }
     ],
-    "week": 37
+    "week": 39
   },
   {
-    "week": 38,
+    "week": 40,
     "topic": "Sepsis",
     "title": "Pediatric Sepsis: Guidelines and the New Phoenix Criteria",
     "papers": [
@@ -760,7 +774,7 @@ const WEEKS_DATA = [
         "filename": "Peds Surviving Sepsis PCCM 2020.pdf",
         "relative_path": "PDSCC_Library/Sepsis/Peds Surviving Sepsis PCCM 2020.pdf",
         "population": "peds",
-        "description": "2020 Surviving Sepsis Campaign \u2014 pediatric guideline"
+        "description": "2020 Surviving Sepsis Campaign — pediatric guideline"
       },
       {
         "filename": "Phoenix Sepsis Criteria JAMA 2024.pdf",
@@ -771,7 +785,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 39,
+    "week": 41,
     "topic": "Transfusion",
     "title": "Whole Blood Resuscitation in Trauma",
     "papers": [
@@ -790,7 +804,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 40,
+    "week": 42,
     "topic": "ECMO",
     "title": "Extracorporeal Cardiopulmonary Resuscitation (ECPR)",
     "papers": [
@@ -803,7 +817,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 41,
+    "week": 43,
     "topic": "ARDS",
     "title": "Surfactant Therapy in PARDS",
     "papers": [
@@ -1282,8 +1296,8 @@ const MANIFEST_DATA = [
   },
   {
     "topic": "ECMO",
-    "filename": "Complications Associated With Venovenous Extracorporeal Membrane Oxygenation\u2014What Can Go Wrong CMM 2022.pdf",
-    "relative_path": "PDSCC_Library/ECMO/Complications Associated With Venovenous Extracorporeal Membrane Oxygenation\u2014What Can Go Wrong CMM 2022.pdf",
+    "filename": "Complications Associated With Venovenous Extracorporeal Membrane Oxygenation—What Can Go Wrong CMM 2022.pdf",
+    "relative_path": "PDSCC_Library/ECMO/Complications Associated With Venovenous Extracorporeal Membrane Oxygenation—What Can Go Wrong CMM 2022.pdf",
     "source": "desktop",
     "original_drive_id": null
   },
@@ -1786,8 +1800,8 @@ const MANIFEST_DATA = [
   },
   {
     "topic": "Unsorted",
-    "filename": "Central or Peripheral Venoarterial Extracorporeal Membrane Oxygenation for Pediatric Sepsis_ Outcomes Comparison in the Extracorporeal Life Support Organization Dataset, 2000\u20132021.pdf",
-    "relative_path": "PDSCC_Library/Unsorted/Central or Peripheral Venoarterial Extracorporeal Membrane Oxygenation for Pediatric Sepsis_ Outcomes Comparison in the Extracorporeal Life Support Organization Dataset, 2000\u20132021.pdf",
+    "filename": "Central or Peripheral Venoarterial Extracorporeal Membrane Oxygenation for Pediatric Sepsis_ Outcomes Comparison in the Extracorporeal Life Support Organization Dataset, 2000–2021.pdf",
+    "relative_path": "PDSCC_Library/Unsorted/Central or Peripheral Venoarterial Extracorporeal Membrane Oxygenation for Pediatric Sepsis_ Outcomes Comparison in the Extracorporeal Life Support Organization Dataset, 2000–2021.pdf",
     "source": "desktop",
     "original_drive_id": null
   },
@@ -1846,7 +1860,7 @@ const QUESTIONS_DATA = [
   {
     "week": 1,
     "topic": "ECMO",
-    "title": "ECMO for Meconium Aspiration Syndrome \u2014 the UK Collaborative Trial",
+    "title": "ECMO for Meconium Aspiration Syndrome — the UK Collaborative Trial",
     "questions": [
       {
         "id": "w1q1",
@@ -1943,13 +1957,13 @@ const QUESTIONS_DATA = [
         "id": "w2q4",
         "stem": "In the ARMA protocol, what plateau pressure ceiling was targeted as part of the low tidal volume strategy?",
         "choices": {
-          "A": "\u226440 cm H2O",
-          "B": "\u226435 cm H2O",
-          "C": "\u226430 cm H2O",
-          "D": "\u226420 cm H2O"
+          "A": "≤40 cm H2O",
+          "B": "≤35 cm H2O",
+          "C": "≤30 cm H2O",
+          "D": "≤20 cm H2O"
         },
         "correct": "C",
-        "explanation": "The ARMA protocol paired the 6 mL/kg predicted body weight tidal volume target with a plateau pressure limit of \u2264 30 cm H2O, further reducing tidal volume in increments if plateau pressure exceeded this threshold. Plateau pressure is used as a surrogate for alveolar distending pressure and end-inspiratory lung stress, and limiting it was considered a key mechanistic component of preventing ventilator-induced lung injury, alongside the tidal volume reduction itself. This plateau pressure ceiling remains a standard part of lung-protective ventilation protocols in both adult and pediatric critical care today."
+        "explanation": "The ARMA protocol paired the 6 mL/kg predicted body weight tidal volume target with a plateau pressure limit of ≤ 30 cm H2O, further reducing tidal volume in increments if plateau pressure exceeded this threshold. Plateau pressure is used as a surrogate for alveolar distending pressure and end-inspiratory lung stress, and limiting it was considered a key mechanistic component of preventing ventilator-induced lung injury, alongside the tidal volume reduction itself. This plateau pressure ceiling remains a standard part of lung-protective ventilation protocols in both adult and pediatric critical care today."
       }
     ]
   },
@@ -2047,7 +2061,7 @@ const QUESTIONS_DATA = [
           "D": "It is used only to measure hepatic blood flow for feeding tolerance"
         },
         "correct": "C",
-        "explanation": "Echocardiography is central to PPHN evaluation because it estimates pulmonary artery pressure (via tricuspid regurgitant jet velocity and septal position), documents the direction of shunting across the ductus arteriosus and foramen ovale, and \u2014 critically \u2014 excludes ductal-dependent structural congenital heart disease (e.g., total anomalous pulmonary venous return, hypoplastic left heart, transposition), which can present with similar hypoxemia but requires a fundamentally different management approach, including avoidance of pulmonary vasodilators in certain lesions."
+        "explanation": "Echocardiography is central to PPHN evaluation because it estimates pulmonary artery pressure (via tricuspid regurgitant jet velocity and septal position), documents the direction of shunting across the ductus arteriosus and foramen ovale, and — critically — excludes ductal-dependent structural congenital heart disease (e.g., total anomalous pulmonary venous return, hypoplastic left heart, transposition), which can present with similar hypoxemia but requires a fundamentally different management approach, including avoidance of pulmonary vasodilators in certain lesions."
       }
     ]
   },
@@ -2078,7 +2092,7 @@ const QUESTIONS_DATA = [
           "D": "Infants with uncomplicated medical (non-perforated) NEC managed without surgery"
         },
         "correct": "B",
-        "explanation": "NEST specifically enrolled extremely low birth weight preterm infants with evidence of intestinal perforation \u2014 either from perforated necrotizing enterocolitis or isolated/spontaneous intestinal perforation (SIP), a related but pathophysiologically distinct entity often associated with early postnatal steroid or indomethacin exposure rather than the ischemic-inflammatory process of NEC. Both perforation etiologies were included because the acute surgical decision (laparotomy vs. drainage) is made before the underlying cause is definitively known, and management at that decision point is similar."
+        "explanation": "NEST specifically enrolled extremely low birth weight preterm infants with evidence of intestinal perforation — either from perforated necrotizing enterocolitis or isolated/spontaneous intestinal perforation (SIP), a related but pathophysiologically distinct entity often associated with early postnatal steroid or indomethacin exposure rather than the ischemic-inflammatory process of NEC. Both perforation etiologies were included because the acute surgical decision (laparotomy vs. drainage) is made before the underlying cause is definitively known, and management at that decision point is similar."
       },
       {
         "id": "nec_q3",
@@ -2102,53 +2116,29 @@ const QUESTIONS_DATA = [
           "D": "There is no clinically meaningful distinction and the two terms are fully interchangeable in all contexts"
         },
         "correct": "B",
-        "explanation": "Spontaneous intestinal perforation is increasingly recognized as a distinct clinical entity from NEC: it tends to present earlier in life, is associated with early postnatal dexamethasone or indomethacin exposure in extremely preterm infants, and typically involves a focal perforation (often in the terminal ileum) without the widespread ischemic-necrotic bowel seen in classic NEC. Distinguishing the two matters because the extent of bowel involved, the likelihood of needing extensive resection, and long-term outcomes (including short bowel syndrome risk) can differ \u2014 even though, as NEST demonstrated, the acute choice between laparotomy and drainage did not differ in survival benefit between the two."
+        "explanation": "Spontaneous intestinal perforation is increasingly recognized as a distinct clinical entity from NEC: it tends to present earlier in life, is associated with early postnatal dexamethasone or indomethacin exposure in extremely preterm infants, and typically involves a focal perforation (often in the terminal ileum) without the widespread ischemic-necrotic bowel seen in classic NEC. Distinguishing the two matters because the extent of bowel involved, the likelihood of needing extensive resection, and long-term outcomes (including short bowel syndrome risk) can differ — even though, as NEST demonstrated, the acute choice between laparotomy and drainage did not differ in survival benefit between the two."
       }
     ]
   },
   {
     "week": 6,
-    "topic": "Transfusion",
-    "title": "Transfusion and Fluid Resuscitation Across the Age Spectrum",
+    "topic": "Fluids",
+    "title": "Fluid Resuscitation in Adult Critical Illness: Crystalloid and Colloid Strategies",
     "questions": [
       {
-        "id": "w4q1",
-        "stem": "TRIPICU (NEJM 2007) compared a restrictive (transfuse below 7 g/dL) versus liberal (transfuse below 9.5 g/dL) RBC transfusion threshold in stable critically ill children. What was the key finding?",
+        "id": "adultfluid_q1",
+        "stem": "SAFE (NEJM 2004) compared 4% albumin with saline for general ICU fluid resuscitation and found no overall mortality difference, but pre-specified/post-hoc subgroup analyses suggested important heterogeneity. What pattern did these subgroup signals show?",
         "choices": {
-          "A": "The restrictive strategy significantly increased new or progressive multiple organ dysfunction (MODS)",
-          "B": "The restrictive strategy was as safe as the liberal strategy, with no difference in new or progressive MODS, while substantially reducing transfusion exposure",
-          "C": "The liberal strategy significantly improved survival",
-          "D": "Both strategies were equally unsafe, prompting withdrawal of transfusion thresholds from practice"
+          "A": "Albumin appeared beneficial in traumatic brain injury and harmful in sepsis",
+          "B": "Albumin appeared to trend toward benefit in patients with severe sepsis, while a signal of harm (higher mortality) was seen with albumin in traumatic brain injury patients",
+          "C": "Both subgroups showed identical, neutral results with no signal in either direction",
+          "D": "Albumin was clearly superior across every subgroup, including trauma and burns"
         },
         "correct": "B",
-        "explanation": "TRIPICU randomized hemodynamically stable critically ill children to a restrictive (transfusion trigger 7 g/dL) versus liberal (trigger 9.5 g/dL) hemoglobin threshold. The restrictive strategy was non-inferior for the primary outcome of new or progressive multiple organ dysfunction, with no significant difference in secondary outcomes, while allowing roughly half of restrictive-strategy patients to avoid transfusion altogether. This established that a lower hemoglobin threshold is safe in stable critically ill children and became the evidentiary foundation for restrictive transfusion practice in pediatric critical care, later reinforced in the surgical subgroup and formalized in the TAXI consensus guideline."
+        "explanation": "While SAFE was neutral overall for 28-day mortality between 4% albumin and saline, subgroup analyses suggested a possible mortality benefit with albumin in patients with severe sepsis, while a separate follow-up analysis in traumatic brain injury patients showed higher mortality with albumin compared with saline. This heterogeneity is an important teaching point: fluid choice may not be a uniform decision across all critically ill patients, and the TBI signal in particular has led to specific avoidance of albumin (especially hypo-oncotic albumin formulations) in patients with intracranial pathology, while ALBIOS later tested albumin more specifically in severe sepsis without demonstrating an overall mortality benefit."
       },
       {
-        "id": "w4q2",
-        "stem": "PlaNeT-2 (NEJM 2019) randomized preterm neonates to a higher (50,000/\u00b5L) versus lower (25,000/\u00b5L) platelet transfusion threshold. What was the counterintuitive result?",
-        "choices": {
-          "A": "The higher threshold significantly reduced death or major bleeding",
-          "B": "The higher threshold significantly increased the risk of death or major bleeding compared with the lower threshold",
-          "C": "There was no difference in any outcome between thresholds",
-          "D": "The lower threshold was unsafe and the trial was stopped early for harm in that arm"
-        },
-        "correct": "B",
-        "explanation": "PlaNeT-2 randomized preterm infants with severe thrombocytopenia to a liberal (transfuse at platelet count <50,000/\u00b5L) versus restrictive (<25,000/\u00b5L) transfusion threshold. Counter to the assumption that more platelets would reduce bleeding, infants in the higher-threshold group had a significantly increased rate of death or major bleeding. This surprising, practice-changing finding suggests platelet transfusions themselves may have adverse immunomodulatory or pro-inflammatory effects in preterm neonates, and it established that a more restrictive platelet transfusion threshold is preferred in this population, directly reversing the prior assumption that a higher platelet count is always protective."
-      },
-      {
-        "id": "w4q3",
-        "stem": "Large RCTs of RBC transfusion thresholds in extremely preterm/low-birth-weight neonates (e.g., the major 2020 trials) generally found which result comparing higher versus lower hemoglobin transfusion thresholds?",
-        "choices": {
-          "A": "A clear, large survival benefit for the higher threshold strategy",
-          "B": "No significant difference in survival without neurodevelopmental impairment between higher and lower transfusion thresholds, supporting adoption of more restrictive practice to reduce donor exposure",
-          "C": "A clear, large survival benefit for the lower threshold strategy",
-          "D": "Both thresholds were found to be unsafe, and transfusion is now avoided entirely in this population"
-        },
-        "correct": "B",
-        "explanation": "The major contemporary RCTs comparing higher versus lower RBC transfusion thresholds in extremely preterm infants did not find a significant difference in the composite outcome of survival free of neurodevelopmental impairment, though some analyses left open the possibility of small, clinically important differences given confidence intervals that did not entirely rule out a difference. In aggregate, this body of evidence, synthesized in subsequent guideline efforts, supports that lower (more restrictive) transfusion thresholds do not appear to compromise outcomes and can reduce donor blood exposure in this vulnerable population, paralleling the restrictive-is-safe theme seen in TRIPICU for older children."
-      },
-      {
-        "id": "w4q4",
+        "id": "adultfluid_q2",
         "stem": "SMART (NEJM 2018) compared balanced crystalloids (lactated Ringer's/Plasma-Lyte) with 0.9% saline in critically ill adults. What did it find?",
         "choices": {
           "A": "Saline significantly reduced the composite of death, new renal replacement therapy, or persistent renal dysfunction compared with balanced crystalloids",
@@ -2160,21 +2150,131 @@ const QUESTIONS_DATA = [
         "explanation": "SMART was a large pragmatic cluster-randomized trial comparing balanced crystalloids to normal saline for ICU fluid administration. Balanced crystalloids significantly reduced the composite outcome of major adverse kidney events within 30 days (MAKE30: death, new renal replacement therapy, or persistent renal dysfunction) compared with saline, an effect attributed to saline's hyperchloremic, non-physiologic composition promoting renal vasoconstriction and acute kidney injury. This trial, along with its companion emergency department trial (SALT-ED), shifted general ICU practice toward preferring balanced crystalloids as the default resuscitation and maintenance fluid over normal saline."
       },
       {
-        "id": "w4q5",
-        "stem": "SAFE (NEJM 2004) compared 4% albumin with saline for general ICU fluid resuscitation and found no overall mortality difference, but pre-specified/post-hoc subgroup analyses suggested important heterogeneity. What pattern did these subgroup signals show?",
+        "id": "adultfluid_q3",
+        "stem": "ALBIOS (NEJM 2014) randomized patients with severe sepsis or septic shock to receive 20% albumin plus crystalloid (targeting a serum albumin ≥30 g/L) versus crystalloid alone. What was the primary result?",
         "choices": {
-          "A": "Albumin appeared beneficial in traumatic brain injury and harmful in sepsis",
-          "B": "Albumin appeared to trend toward benefit in patients with severe sepsis, while a signal of harm (higher mortality) was seen with albumin in traumatic brain injury patients",
-          "C": "Both subgroups showed identical, neutral results with no signal in either direction",
-          "D": "Albumin was clearly superior across every subgroup, including trauma and burns"
+          "A": "Albumin supplementation significantly reduced 28-day mortality compared with crystalloid alone",
+          "B": "There was no significant difference in 28-day or 90-day mortality between the albumin and crystalloid-alone groups, despite albumin successfully correcting serum albumin levels",
+          "C": "Albumin supplementation significantly increased mortality and the trial was stopped early for harm",
+          "D": "Albumin could not be safely administered in septic shock due to unacceptable rates of pulmonary edema"
         },
         "correct": "B",
-        "explanation": "While SAFE was neutral overall for 28-day mortality between 4% albumin and saline, subgroup analyses suggested a possible mortality benefit with albumin in patients with severe sepsis, while a separate follow-up analysis in traumatic brain injury patients showed higher mortality with albumin compared with saline. This heterogeneity is an important teaching point: fluid choice may not be a uniform decision across all critically ill patients, and the TBI signal in particular has led to specific avoidance of albumin (especially hypo-oncotic albumin formulations) in patients with intracranial pathology, while ALBIOS later tested albumin more specifically in severe sepsis without demonstrating an overall mortality benefit."
+        "explanation": "ALBIOS tested whether targeted albumin repletion to a physiologic serum level, on top of standard crystalloid resuscitation, would improve survival in severe sepsis and septic shock. Although the albumin arm achieved and maintained higher serum albumin concentrations as intended, this did not translate into a significant difference in 28-day or 90-day mortality compared with crystalloid alone, including in a pre-specified septic shock subgroup where a possible benefit had been hypothesized. ALBIOS is an important complement to SAFE: it directly tested albumin's most biologically plausible target population (severe sepsis) with a physiologic dosing strategy, and still did not demonstrate a mortality benefit, reinforcing that albumin should not be used as a routine resuscitation fluid for its own sake in sepsis."
+      },
+      {
+        "id": "adultfluid_q4",
+        "stem": "Taken together, SAFE, ALBIOS, and SMART illustrate a consistent theme about fluid choice in adult critical illness. What is that theme?",
+        "choices": {
+          "A": "Colloids are uniformly superior to crystalloids and should replace them in all ICU patients",
+          "B": "The specific composition of resuscitation and maintenance fluid can meaningfully affect outcomes (e.g., balanced crystalloids reducing kidney injury versus saline), while adding albumin simply to raise serum albumin levels has not been shown to improve survival",
+          "C": "Fluid choice has no measurable effect on any clinically important outcome in critically ill adults",
+          "D": "Albumin should be used as first-line resuscitation fluid in all critically ill adults based on these trials"
+        },
+        "correct": "B",
+        "explanation": "SMART demonstrated that the chloride content and physiologic balance of a crystalloid matters, with balanced crystalloids reducing major adverse kidney events compared with normal saline. SAFE showed that albumin versus saline was broadly neutral overall but revealed important subgroup heterogeneity (a harm signal in TBI, a possible benefit signal in sepsis). ALBIOS then directly tested that sepsis signal with a physiologic albumin-repletion strategy and still found no mortality benefit. Together these trials teach that fluid composition is not an inert choice — it can independently affect outcomes like AKI — but that adding albumin specifically to correct hypoalbuminemia has not been shown to improve survival, an important distinction for bedside decision-making."
       }
     ]
   },
   {
     "week": 7,
+    "topic": "Transfusion",
+    "title": "Restrictive vs. Liberal RBC Transfusion Thresholds in Critically Ill Children — the TRIPICU Trial",
+    "questions": [
+      {
+        "id": "pedstx_q1",
+        "stem": "TRIPICU (NEJM 2007) compared a restrictive (transfuse below 7 g/dL) versus liberal (transfuse below 9.5 g/dL) RBC transfusion threshold in stable critically ill children. What was the key finding?",
+        "choices": {
+          "A": "The restrictive strategy significantly increased new or progressive multiple organ dysfunction (MODS)",
+          "B": "The restrictive strategy was as safe as the liberal strategy, with no difference in new or progressive MODS, while substantially reducing transfusion exposure",
+          "C": "The liberal strategy significantly improved survival",
+          "D": "Both strategies were equally unsafe, prompting withdrawal of transfusion thresholds from practice"
+        },
+        "correct": "B",
+        "explanation": "TRIPICU randomized hemodynamically stable critically ill children to a restrictive (transfusion trigger 7 g/dL) versus liberal (trigger 9.5 g/dL) hemoglobin threshold. The restrictive strategy was non-inferior for the primary outcome of new or progressive multiple organ dysfunction, with no significant difference in secondary outcomes, while allowing roughly half of restrictive-strategy patients to avoid transfusion altogether. This established that a lower hemoglobin threshold is safe in stable critically ill children and became the evidentiary foundation for restrictive transfusion practice in pediatric critical care, later reinforced in the surgical subgroup and formalized in the TAXI consensus guideline."
+      },
+      {
+        "id": "pedstx_q2",
+        "stem": "The TRIPICU surgical subgroup analysis (Annals of Surgery 2010) examined whether the restrictive transfusion threshold remained safe specifically in postoperative/surgical PICU patients. What did it find?",
+        "choices": {
+          "A": "The restrictive strategy was unsafe in surgical patients and significantly increased organ dysfunction, unlike the medical cohort",
+          "B": "The restrictive transfusion threshold was similarly safe in the surgical subgroup, with no significant increase in new or progressive organ dysfunction compared with the liberal strategy, extending the main trial's findings to postoperative children",
+          "C": "Surgical patients required transfusion at a fixed hemoglobin of 10 g/dL regardless of study arm",
+          "D": "The subgroup was too small to draw any conclusions and the analysis was not published"
+        },
+        "correct": "B",
+        "explanation": "A key question after the main TRIPICU trial was whether its restrictive-threshold safety findings applied to postoperative and surgical PICU patients, who might be expected to tolerate lower hemoglobin less well due to ongoing bleeding risk or hemodynamic stress. The surgical subgroup analysis found that the restrictive strategy remained safe in this population, with outcomes comparable to the liberal strategy, supporting the extension of restrictive transfusion practice to stable postoperative pediatric surgical patients rather than reflexively transfusing to a higher threshold in the perioperative period."
+      },
+      {
+        "id": "pedstx_q3",
+        "stem": "TRIPICU's restrictive-is-safe conclusion in critically ill children parallels an earlier landmark trial in adults. Which adult trial established a similar restrictive transfusion threshold as safe (and possibly superior in less acutely ill patients) roughly a decade before TRIPICU?",
+        "choices": {
+          "A": "TRICC (Hebert et al, NEJM 1999), which compared a restrictive (7 g/dL) versus liberal (10 g/dL) transfusion threshold in critically ill adults",
+          "B": "SAFE (NEJM 2004), which compared albumin with saline for fluid resuscitation",
+          "C": "ARISE (NEJM 2014), an early goal-directed therapy trial in septic shock",
+          "D": "PROCESS (NEJM 2014), a protocolized sepsis care trial"
+        },
+        "correct": "A",
+        "explanation": "TRICC (the Transfusion Requirements in Critical Care trial) was the landmark adult ICU trial that first established a restrictive hemoglobin threshold (7 g/dL) as at least as safe as a liberal threshold (10 g/dL), with a signal toward lower mortality with the restrictive strategy in less severely ill and younger patients. TRIPICU essentially replicated this question in critically ill children roughly a decade later and reached a concordant conclusion, which is why pairing the two trials is useful pedagogically: it shows that a foundational critical care practice change (restrictive transfusion) was independently validated across both adult and pediatric critical care populations, reinforcing confidence in restrictive thresholds as a generalizable principle rather than an adult-only or pediatric-only finding."
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "topic": "Transfusion/Neonatal",
+    "title": "Neonatal RBC and Platelet Transfusion Thresholds",
+    "questions": [
+      {
+        "id": "neotx_q1",
+        "stem": "The TOP trial (Transfusion of Prematures, Kirpalani et al, NEJM 2020) randomized extremely low-birth-weight preterm infants to higher versus lower hemoglobin transfusion thresholds (stratified by postnatal age and respiratory support). What was the main finding?",
+        "choices": {
+          "A": "The higher-threshold strategy significantly improved survival free of neurodevelopmental impairment",
+          "B": "There was no significant difference between the higher and lower threshold strategies in survival without neurodevelopmental impairment at approximately 22–26 months",
+          "C": "The lower-threshold strategy was stopped early because of excess mortality",
+          "D": "Both strategies resulted in every infant requiring at least one transfusion"
+        },
+        "correct": "B",
+        "explanation": "TOP was one of the two major contemporary RCTs (along with ETTNO) designed to resolve uncertainty about optimal RBC transfusion thresholds in extremely preterm infants, using thresholds that were stratified by postnatal age and degree of respiratory support rather than a single fixed number. Consistent with the broader restrictive-is-safe theme seen across pediatric and adult transfusion medicine, TOP found no significant difference in survival free of neurodevelopmental impairment between the higher and lower threshold groups, supporting the safety of a more restrictive approach and reducing unnecessary donor blood exposure in this fragile population."
+      },
+      {
+        "id": "neotx_q2",
+        "stem": "ETTNO (Effects of Transfusion Thresholds on Neurocognitive Outcome, Franz et al, JAMA 2020) asked a similar question to TOP in a separate cohort of extremely-low-birth-weight infants. How did its main conclusion compare with TOP's?",
+        "choices": {
+          "A": "ETTNO reached a discordant conclusion, finding a clear neurodevelopmental benefit with the liberal threshold",
+          "B": "ETTNO reached a concordant conclusion: no significant difference in survival/neurocognitive outcome between liberal and restrictive transfusion threshold strategies, reinforcing TOP's findings",
+          "C": "ETTNO found restrictive thresholds were unsafe and increased mortality",
+          "D": "ETTNO was stopped early due to futility before enrolling enough patients to draw any conclusion"
+        },
+        "correct": "B",
+        "explanation": "ETTNO independently tested liberal versus restrictive RBC transfusion thresholds in extremely-low-birth-weight infants using a different European cohort and enrollment strategy than TOP, which strengthens the overall evidence base when the two trials agree. Like TOP, ETTNO found no significant difference in survival without neurodevelopmental impairment between threshold strategies. Having two large, independently conducted trials reach a concordant conclusion is particularly persuasive evidence in neonatology, where single-trial results can be affected by differences in population and practice patterns across centers, and this concordance underpins the restrictive-threshold recommendations reflected in subsequent guidelines."
+      },
+      {
+        "id": "neotx_q3",
+        "stem": "PlaNeT-2 (NEJM 2019) randomized preterm neonates to a higher (50,000/µL) versus lower (25,000/µL) platelet transfusion threshold. What was the counterintuitive result?",
+        "choices": {
+          "A": "The higher threshold significantly reduced death or major bleeding",
+          "B": "The higher threshold significantly increased the risk of death or major bleeding compared with the lower threshold",
+          "C": "There was no difference in any outcome between thresholds",
+          "D": "The lower threshold was unsafe and the trial was stopped early for harm in that arm"
+        },
+        "correct": "B",
+        "explanation": "PlaNeT-2 randomized preterm infants with severe thrombocytopenia to a liberal (transfuse at platelet count <50,000/µL) versus restrictive (<25,000/µL) transfusion threshold. Counter to the assumption that more platelets would reduce bleeding, infants in the higher-threshold group had a significantly increased rate of death or major bleeding. This surprising, practice-changing finding suggests platelet transfusions themselves may have adverse immunomodulatory or pro-inflammatory effects in preterm neonates, and it established that a more restrictive platelet transfusion threshold is preferred in this population, directly reversing the prior assumption that a higher platelet count is always protective."
+      },
+      {
+        "id": "neotx_q4",
+        "stem": "How did the 2024 JAMA Network Open neonatal RBC transfusion guideline synthesize the TOP, ETTNO, and platelet threshold (PlaNeT-2) evidence base?",
+        "choices": {
+          "A": "It recommended abandoning transfusion thresholds entirely in favor of clinical judgment alone",
+          "B": "It recommended adopting more restrictive RBC and platelet transfusion thresholds as the default approach for preterm/neonatal patients, reflecting that liberal thresholds had not been shown to improve outcomes and platelet over-transfusion carried a signal of harm",
+          "C": "It recommended a universal fixed threshold of 10 g/dL for all neonates regardless of gestational age or clinical status",
+          "D": "It concluded the existing RCT evidence was too inconsistent to support any guideline recommendation"
+        },
+        "correct": "B",
+        "explanation": "By 2024, the accumulated RCT evidence — TOP and ETTNO for RBC thresholds showing no benefit from a liberal strategy, and PlaNeT-2 showing an actual harm signal with a higher platelet transfusion threshold — supported consolidating neonatal transfusion practice around more restrictive default thresholds rather than the historically more liberal practice patterns. This guideline exemplifies how a curriculum should connect individual trials to practice-changing synthesis: three well-conducted RCTs across two different blood products converged on the same restrictive-favors-safety conclusion, giving guideline authors unusually strong grounds for a clear, practice-changing recommendation rather than a hedged one."
+      }
+    ]
+  },
+  {
+    "week": 9,
     "topic": "ECMO",
     "title": "Bleeding and Thrombosis on ECMO",
     "questions": [
@@ -2217,7 +2317,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 8,
+    "week": 10,
     "topic": "AKI/Timing",
     "title": "Timing of Renal Replacement Therapy in AKI",
     "questions": [
@@ -2272,7 +2372,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 9,
+    "week": 11,
     "topic": "ARDS",
     "title": "Corticosteroids in ARDS/PARDS",
     "questions": [
@@ -2327,7 +2427,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 10,
+    "week": 12,
     "topic": "Delirium/Sedation",
     "title": "Sedation Protocols and Early Mobility in the PICU",
     "questions": [
@@ -2382,7 +2482,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 11,
+    "week": 13,
     "topic": "Endocrine",
     "title": "Glycemic Control in Critical Illness",
     "questions": [
@@ -2437,7 +2537,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 12,
+    "week": 14,
     "topic": "ECMO",
     "title": "Peripheral ECMO Cannulation and Vascular Complications",
     "questions": [
@@ -2480,7 +2580,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 13,
+    "week": 15,
     "topic": "Transfusion",
     "title": "Massive Transfusion Protocols in Pediatric Trauma",
     "questions": [
@@ -2523,7 +2623,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 14,
+    "week": 16,
     "topic": "Nutrition",
     "title": "Timing of Parenteral Nutrition in Critical Illness",
     "questions": [
@@ -2566,7 +2666,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 15,
+    "week": 17,
     "topic": "AKI",
     "title": "Epidemiology of Pediatric AKI",
     "questions": [
@@ -2609,7 +2709,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 16,
+    "week": 18,
     "topic": "ECMO",
     "title": "ECMO Anticoagulation and Coagulation Management",
     "questions": [
@@ -2652,7 +2752,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 17,
+    "week": 19,
     "topic": "ARDS",
     "title": "High-Frequency Oscillatory Ventilation in ARDS/PARDS",
     "questions": [
@@ -2707,7 +2807,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 18,
+    "week": 20,
     "topic": "Neonatal Hemodynamics",
     "title": "Neonatal Hemodynamics",
     "questions": [
@@ -2750,7 +2850,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 19,
+    "week": 21,
     "topic": "Transfusion",
     "title": "Age of Transfused Blood",
     "questions": [
@@ -2793,13 +2893,13 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 20,
+    "week": 22,
     "topic": "Sepsis",
-    "title": "Early Goal-Directed Therapy \u2014 Rise and Fall of a Sepsis Paradigm",
+    "title": "Early Goal-Directed Therapy — Rise and Fall of a Sepsis Paradigm",
     "questions": [
       {
         "id": "w18q1",
-        "stem": "The original Rivers trial (NEJM 2001) tested early goal-directed therapy (EGDT), a protocol targeting central venous pressure, mean arterial pressure, and central venous oxygen saturation (ScvO2 \u226570%) using fluids, vasopressors, blood transfusion, and dobutamine. What did it find?",
+        "stem": "The original Rivers trial (NEJM 2001) tested early goal-directed therapy (EGDT), a protocol targeting central venous pressure, mean arterial pressure, and central venous oxygen saturation (ScvO2 ≥70%) using fluids, vasopressors, blood transfusion, and dobutamine. What did it find?",
         "choices": {
           "A": "No difference in mortality compared with usual care",
           "B": "A single-center trial showing a large, statistically significant reduction in in-hospital mortality with EGDT compared with usual care",
@@ -2807,7 +2907,7 @@ const QUESTIONS_DATA = [
           "D": "The trial was terminated early due to an unacceptable rate of catheter-related complications"
         },
         "correct": "B",
-        "explanation": "Rivers' original single-center trial randomized patients presenting to the emergency department with severe sepsis or septic shock to a structured EGDT protocol, targeting specific hemodynamic parameters (CVP, MAP, ScvO2) within the first 6 hours using fluids, vasopressors, packed RBC transfusion to a hematocrit \u226530%, and dobutamine as needed, versus usual care. EGDT produced a dramatic and statistically significant reduction in in-hospital mortality. This single-center result was enormously influential and led to EGDT becoming widely adopted and later embedded in early Surviving Sepsis Campaign bundles, despite being generated at a single site."
+        "explanation": "Rivers' original single-center trial randomized patients presenting to the emergency department with severe sepsis or septic shock to a structured EGDT protocol, targeting specific hemodynamic parameters (CVP, MAP, ScvO2) within the first 6 hours using fluids, vasopressors, packed RBC transfusion to a hematocrit ≥30%, and dobutamine as needed, versus usual care. EGDT produced a dramatic and statistically significant reduction in in-hospital mortality. This single-center result was enormously influential and led to EGDT becoming widely adopted and later embedded in early Surviving Sepsis Campaign bundles, despite being generated at a single site."
       },
       {
         "id": "w18q2",
@@ -2860,7 +2960,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 21,
+    "week": 23,
     "topic": "Delirium",
     "title": "PICU Delirium and Post-TBI Tracheostomy",
     "questions": [
@@ -2915,7 +3015,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 22,
+    "week": 24,
     "topic": "ECMO",
     "title": "ECMO as Rescue Therapy in Severe ARDS",
     "questions": [
@@ -2970,7 +3070,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 23,
+    "week": 25,
     "topic": "Nutrition",
     "title": "Enteral Nutrition During Vasopressor Support",
     "questions": [
@@ -3013,7 +3113,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 24,
+    "week": 26,
     "topic": "AKI/Neonatal",
     "title": "Neonatal AKI Epidemiology (AWAKEN)",
     "questions": [
@@ -3056,7 +3156,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 25,
+    "week": 27,
     "topic": "ARDS",
     "title": "Defining Pediatric ARDS (PALICC)",
     "questions": [
@@ -3099,7 +3199,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 26,
+    "week": 28,
     "topic": "TBI",
     "title": "Severe Traumatic Brain Injury Guidelines",
     "questions": [
@@ -3129,7 +3229,7 @@ const QUESTIONS_DATA = [
       },
       {
         "id": "w24q3",
-        "stem": "What do the guidelines conclude regarding moderate hypothermia (32-33\u00b0C) as a standard early therapy for severe pediatric TBI?",
+        "stem": "What do the guidelines conclude regarding moderate hypothermia (32-33°C) as a standard early therapy for severe pediatric TBI?",
         "choices": {
           "A": "Moderate hypothermia is strongly recommended as first-line standard therapy for all children with severe TBI",
           "B": "Moderate hypothermia is not recommended as standard early therapy, reflecting evidence from pediatric trials that failed to demonstrate benefit and raised concern for harms such as rebound intracranial hypertension and arrhythmia risk during rewarming",
@@ -3137,7 +3237,7 @@ const QUESTIONS_DATA = [
           "D": "The guidelines recommend hypothermia only for infants under 6 months of age"
         },
         "correct": "B",
-        "explanation": "Pediatric trials of moderate hypothermia (typically targeting 32-33\u00b0C) as an early, routine therapy for severe TBI failed to demonstrate a clinical outcome benefit and raised safety concerns, including rebound intracranial hypertension and cardiac arrhythmia risk during the rewarming phase. As a result, the pediatric severe TBI guidelines do not recommend routine early moderate hypothermia as standard therapy, reserving temperature management primarily to avoiding fever (targeted normothermia) rather than actively inducing hypothermia, a conclusion that parallels similarly disappointing hypothermia trial results in other areas of pediatric and adult critical care."
+        "explanation": "Pediatric trials of moderate hypothermia (typically targeting 32-33°C) as an early, routine therapy for severe TBI failed to demonstrate a clinical outcome benefit and raised safety concerns, including rebound intracranial hypertension and cardiac arrhythmia risk during the rewarming phase. As a result, the pediatric severe TBI guidelines do not recommend routine early moderate hypothermia as standard therapy, reserving temperature management primarily to avoiding fever (targeted normothermia) rather than actively inducing hypothermia, a conclusion that parallels similarly disappointing hypothermia trial results in other areas of pediatric and adult critical care."
       },
       {
         "id": "w24q4",
@@ -3154,7 +3254,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 27,
+    "week": 29,
     "topic": "Delirium/Sedation",
     "title": "ICU Liberation: the ABCDEF Bundle and Pediatric Sedation Guidelines",
     "questions": [
@@ -3209,7 +3309,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 28,
+    "week": 30,
     "topic": "Transfusion",
     "title": "Pediatric Transfusion Consensus Guidelines (TAXI)",
     "questions": [
@@ -3252,7 +3352,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 29,
+    "week": 31,
     "topic": "Transfusion",
     "title": "Tranexamic Acid in Trauma",
     "questions": [
@@ -3302,12 +3402,12 @@ const QUESTIONS_DATA = [
           "D": "Current guidelines restrict TXA use to children older than 12 years only"
         },
         "correct": "B",
-        "explanation": "This is a common and clinically important evidence-translation problem in pediatric critical care: a landmark adult RCT (CRASH-2) establishes a clear, time-dependent benefit, but no pediatric trial of comparable size and rigor exists. Current pediatric trauma practice extrapolates the adult principle \u2014 early administration within the 3-hour window \u2014 while dosing is typically weight-based and derived from pharmacokinetic rather than outcome data. Recognizing when pediatric practice is built on genuine pediatric evidence versus reasonable extrapolation from adult trials is a core critical-appraisal skill for this curriculum."
+        "explanation": "This is a common and clinically important evidence-translation problem in pediatric critical care: a landmark adult RCT (CRASH-2) establishes a clear, time-dependent benefit, but no pediatric trial of comparable size and rigor exists. Current pediatric trauma practice extrapolates the adult principle — early administration within the 3-hour window — while dosing is typically weight-based and derived from pharmacokinetic rather than outcome data. Recognizing when pediatric practice is built on genuine pediatric evidence versus reasonable extrapolation from adult trials is a core critical-appraisal skill for this curriculum."
       }
     ]
   },
   {
-    "week": 30,
+    "week": 32,
     "topic": "Sepsis/ECMO",
     "title": "VA-ECMO in Septic Shock",
     "questions": [
@@ -3350,7 +3450,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 31,
+    "week": 33,
     "topic": "Endocrine",
     "title": "Corticosteroids in Adult Septic Shock (ADRENAL)",
     "questions": [
@@ -3393,7 +3493,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 32,
+    "week": 34,
     "topic": "ARDS",
     "title": "Pediatric Tracheostomy: Timing and Outcomes",
     "questions": [
@@ -3436,7 +3536,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 33,
+    "week": 35,
     "topic": "Transfusion",
     "title": "Bleeding Assessment and Institutional ECMO Experience",
     "questions": [
@@ -3479,7 +3579,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 34,
+    "week": 36,
     "topic": "AKI/Dosing",
     "title": "CRRT Dosing/Intensity",
     "questions": [
@@ -3522,7 +3622,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 35,
+    "week": 37,
     "topic": "ARDS",
     "title": "Neuromuscular Blockade in ARDS",
     "questions": [
@@ -3577,7 +3677,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 36,
+    "week": 38,
     "topic": "PODIUM",
     "title": "Defining Pediatric Organ Dysfunction: The PODIUM Consensus Criteria",
     "questions": [
@@ -3591,7 +3691,7 @@ const QUESTIONS_DATA = [
           "D": "PODIUM focused solely on cardiovascular dysfunction and did not address other organ systems"
         },
         "correct": "A",
-        "explanation": "PODIUM convened a large multidisciplinary expert panel (88 members, 47 institutions, 7 countries) specifically because prior definitions of pediatric organ dysfunction were based largely on expert opinion rather than systematic evidence review. The panel conducted formal systematic reviews for each organ system \u2014 neurologic, cardiovascular, respiratory, gastrointestinal, acute liver, renal, hematologic, coagulation, endocrine, endothelial, and immune \u2014 and derived contemporary, evidence-informed consensus criteria for both single and multiple organ dysfunction, intended as a modern foundation for clinical research and, eventually, clinical practice."
+        "explanation": "PODIUM convened a large multidisciplinary expert panel (88 members, 47 institutions, 7 countries) specifically because prior definitions of pediatric organ dysfunction were based largely on expert opinion rather than systematic evidence review. The panel conducted formal systematic reviews for each organ system — neurologic, cardiovascular, respiratory, gastrointestinal, acute liver, renal, hematologic, coagulation, endocrine, endothelial, and immune — and derived contemporary, evidence-informed consensus criteria for both single and multiple organ dysfunction, intended as a modern foundation for clinical research and, eventually, clinical practice."
       },
       {
         "id": "podium_q2",
@@ -3603,7 +3703,7 @@ const QUESTIONS_DATA = [
           "D": "An echocardiographic ejection fraction between 55% and 65%"
         },
         "correct": "B",
-        "explanation": "The PODIUM cardiovascular dysfunction paper defined 9 elements of cardiovascular dysfunction, with cardiopulmonary arrest greater than 5 minutes or the need for mechanical circulatory support each independently sufficient to define severe cardiovascular dysfunction on their own. The remaining elements \u2014 tachycardia, hypotension, vasoactive-inotropic score, lactate, troponin I, central venous oxygen saturation, and echocardiographic left ventricular ejection fraction \u2014 were incorporated in combination rather than as independent sufficient criteria, reflecting that no single one of those milder findings alone was considered definitive evidence of severe dysfunction."
+        "explanation": "The PODIUM cardiovascular dysfunction paper defined 9 elements of cardiovascular dysfunction, with cardiopulmonary arrest greater than 5 minutes or the need for mechanical circulatory support each independently sufficient to define severe cardiovascular dysfunction on their own. The remaining elements — tachycardia, hypotension, vasoactive-inotropic score, lactate, troponin I, central venous oxygen saturation, and echocardiographic left ventricular ejection fraction — were incorporated in combination rather than as independent sufficient criteria, reflecting that no single one of those milder findings alone was considered definitive evidence of severe dysfunction."
       },
       {
         "id": "podium_q3",
@@ -3615,7 +3715,7 @@ const QUESTIONS_DATA = [
           "D": "Urine output greater than 1 mL/kg/hr sustained over 24 hours"
         },
         "correct": "A",
-        "explanation": "The PODIUM renal dysfunction criteria supported several alternative pathways to meeting the definition, including oliguria (urine output <0.5 mL/kg/hr for \u22656 hours) combined with a creatinine rise of 1.5-1.9x baseline (or \u22650.3 mg/dL), more prolonged oliguria (<0.5 mL/kg/hr for \u226512 hours) alone, a larger creatinine rise (\u22652x baseline), a low estimated GFR (<35 mL/min/1.73m\u00b2), initiation of renal replacement therapy, or fluid overload of 20% or more. This KDIGO-informed, multi-pathway structure reflects that renal dysfunction in critically ill children can present through different but overlapping physiologic derangements."
+        "explanation": "The PODIUM renal dysfunction criteria supported several alternative pathways to meeting the definition, including oliguria (urine output <0.5 mL/kg/hr for ≥6 hours) combined with a creatinine rise of 1.5-1.9x baseline (or ≥0.3 mg/dL), more prolonged oliguria (<0.5 mL/kg/hr for ≥12 hours) alone, a larger creatinine rise (≥2x baseline), a low estimated GFR (<35 mL/min/1.73m²), initiation of renal replacement therapy, or fluid overload of 20% or more. This KDIGO-informed, multi-pathway structure reflects that renal dysfunction in critically ill children can present through different but overlapping physiologic derangements."
       },
       {
         "id": "podium_q4",
@@ -3627,12 +3727,12 @@ const QUESTIONS_DATA = [
           "D": "The criteria apply only to children older than 12 years"
         },
         "correct": "B",
-        "explanation": "Across the individual organ-system PODIUM papers, the panel consistently acknowledged that the underlying evidence base was observational \u2014 and often retrospective \u2014 rather than derived from prospective, criterion-validating studies. This is an important limitation: the criteria represent the best available evidence-informed consensus at the time, but require prospective validation to confirm their predictive and clinical utility. Despite this limitation, the framework has been influential, including informing subsequent efforts such as the Phoenix Sepsis Criteria, which built on a similar organ-dysfunction-based approach to define pediatric sepsis and septic shock."
+        "explanation": "Across the individual organ-system PODIUM papers, the panel consistently acknowledged that the underlying evidence base was observational — and often retrospective — rather than derived from prospective, criterion-validating studies. This is an important limitation: the criteria represent the best available evidence-informed consensus at the time, but require prospective validation to confirm their predictive and clinical utility. Despite this limitation, the framework has been influential, including informing subsequent efforts such as the Phoenix Sepsis Criteria, which built on a similar organ-dysfunction-based approach to define pediatric sepsis and septic shock."
       }
     ]
   },
   {
-    "week": 37,
+    "week": 39,
     "topic": "Acute Liver Failure",
     "title": "Acute Liver Failure in Children: Multidisciplinary Management",
     "questions": [
@@ -3646,7 +3746,7 @@ const QUESTIONS_DATA = [
           "D": "Neurologic monitoring is unnecessary in pediatric ALF because encephalopathy is rare in children"
         },
         "correct": "B",
-        "explanation": "Pediatric ALF can progress rapidly from isolated hepatic dysfunction to multiorgan involvement, including coagulopathy, hepatic encephalopathy, cerebral edema, and hemodynamic instability. Because of this trajectory and the possibility that transplantation may become urgently necessary, multidisciplinary coordination between critical care, hepatology, and a liver transplant center \u2014 ideally initiated early, even before transplant need is certain \u2014 is a central management principle. Close neurologic monitoring is essential, since encephalopathy grading is both a diagnostic criterion and a key trigger for escalating care."
+        "explanation": "Pediatric ALF can progress rapidly from isolated hepatic dysfunction to multiorgan involvement, including coagulopathy, hepatic encephalopathy, cerebral edema, and hemodynamic instability. Because of this trajectory and the possibility that transplantation may become urgently necessary, multidisciplinary coordination between critical care, hepatology, and a liver transplant center — ideally initiated early, even before transplant need is certain — is a central management principle. Close neurologic monitoring is essential, since encephalopathy grading is both a diagnostic criterion and a key trigger for escalating care."
       },
       {
         "id": "alf_q2",
@@ -3658,7 +3758,7 @@ const QUESTIONS_DATA = [
           "D": "FFP paradoxically worsens hepatic synthetic function"
         },
         "correct": "C",
-        "explanation": "In acute liver failure, INR reflects the liver's synthetic function and is one of the most important trend markers used to gauge severity, trajectory, and prognosis (and factors into transplant-listing criteria). Routine prophylactic FFP administration in a non-bleeding patient artificially normalizes this marker, masking the true clinical trajectory, without clear evidence that it reduces bleeding risk in this population \u2014 bleeding in ALF correlates poorly with INR alone. FFP is reserved for active clinically significant bleeding or in anticipation of an invasive procedure, not as routine prophylaxis."
+        "explanation": "In acute liver failure, INR reflects the liver's synthetic function and is one of the most important trend markers used to gauge severity, trajectory, and prognosis (and factors into transplant-listing criteria). Routine prophylactic FFP administration in a non-bleeding patient artificially normalizes this marker, masking the true clinical trajectory, without clear evidence that it reduces bleeding risk in this population — bleeding in ALF correlates poorly with INR alone. FFP is reserved for active clinically significant bleeding or in anticipation of an invasive procedure, not as routine prophylaxis."
       },
       {
         "id": "alf_q3",
@@ -3670,12 +3770,12 @@ const QUESTIONS_DATA = [
           "D": "It replaced the need for any clinical assessment of encephalopathy"
         },
         "correct": "B",
-        "explanation": "The PODIUM Liver paper was developed using the same systematic review and consensus process as the other organ-system PODIUM papers (cardiovascular, renal, respiratory, etc.), deriving criteria for hepatic/liver dysfunction \u2014 generally incorporating coagulation parameters (such as INR) alongside clinical assessment of hepatic encephalopathy \u2014 as one component of the broader multiorgan dysfunction framework PODIUM established for critically ill children. Understanding hepatic dysfunction within this same evidence-informed framework reinforces how single-organ criteria (like those for ALF) fit into the larger picture of recognizing and tracking multiorgan dysfunction in the PICU."
+        "explanation": "The PODIUM Liver paper was developed using the same systematic review and consensus process as the other organ-system PODIUM papers (cardiovascular, renal, respiratory, etc.), deriving criteria for hepatic/liver dysfunction — generally incorporating coagulation parameters (such as INR) alongside clinical assessment of hepatic encephalopathy — as one component of the broader multiorgan dysfunction framework PODIUM established for critically ill children. Understanding hepatic dysfunction within this same evidence-informed framework reinforces how single-organ criteria (like those for ALF) fit into the larger picture of recognizing and tracking multiorgan dysfunction in the PICU."
       }
     ]
   },
   {
-    "week": 38,
+    "week": 40,
     "topic": "Sepsis",
     "title": "Pediatric Sepsis: Guidelines and the New Phoenix Criteria",
     "questions": [
@@ -3730,7 +3830,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 39,
+    "week": 41,
     "topic": "Transfusion",
     "title": "Whole Blood Resuscitation in Trauma",
     "questions": [
@@ -3785,7 +3885,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 40,
+    "week": 42,
     "topic": "ECMO",
     "title": "Extracorporeal Cardiopulmonary Resuscitation (ECPR)",
     "questions": [
@@ -3828,7 +3928,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 41,
+    "week": 43,
     "topic": "ARDS",
     "title": "Surfactant Therapy in PARDS",
     "questions": [
@@ -3872,5 +3972,4 @@ const QUESTIONS_DATA = [
   }
 ];
 
-const QUESTIONS_SOURCE = "full_41week";
-
+const QUESTIONS_SOURCE = "full_43week";
