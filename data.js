@@ -670,7 +670,7 @@ const WEEKS_DATA = [
       },
       {
         "filename": "Central or Peripheral VA ECMO Pediatric Sepsis ELSO.pdf",
-        "relative_path": "PDSCC_Library/Sepsis/Central or Peripheral VA ECMO Pediatric Sepsis ELSO.pdf",
+        "relative_path": "PDSCC_Library/ECMO/Central or Peripheral VA ECMO Pediatric Sepsis ELSO.pdf",
         "population": "peds",
         "description": "Central vs peripheral VA-ECMO in pediatric sepsis (ELSO registry)"
       }
@@ -1556,9 +1556,9 @@ const MANIFEST_DATA = [
     "original_drive_id": "1rx5s-WHn86UQVQdXu8QvkcOF7ttGhsej"
   },
   {
-    "topic": "Sepsis",
+    "topic": "ECMO/Sepsis",
     "filename": "Central or Peripheral VA ECMO Pediatric Sepsis ELSO.pdf",
-    "relative_path": "PDSCC_Library/Sepsis/Central or Peripheral VA ECMO Pediatric Sepsis ELSO.pdf",
+    "relative_path": "PDSCC_Library/ECMO/Central or Peripheral VA ECMO Pediatric Sepsis ELSO.pdf",
     "source": "drive",
     "original_drive_id": "1L_ltm-Tkx0SE3kwYvel6BWzoOY79E8-a"
   },
@@ -1841,27 +1841,6 @@ const MANIFEST_DATA = [
     "relative_path": "PDSCC_Library/Transfusion/Whole Blood Gaines Annals 2021.pdf",
     "source": "drive",
     "original_drive_id": "1_jcF4BCZMUAiXXdHFexrGaPpnvLOHeBB"
-  },
-  {
-    "topic": "Unsorted",
-    "filename": "Central or Peripheral Venoarterial Extracorporeal Membrane Oxygenation for Pediatric Sepsis_ Outcomes Comparison in the Extracorporeal Life Support Organization Dataset, 2000–2021.pdf",
-    "relative_path": "PDSCC_Library/Unsorted/Central or Peripheral Venoarterial Extracorporeal Membrane Oxygenation for Pediatric Sepsis_ Outcomes Comparison in the Extracorporeal Life Support Organization Dataset, 2000–2021.pdf",
-    "source": "desktop",
-    "original_drive_id": null
-  },
-  {
-    "topic": "Unsorted",
-    "filename": "LouLou Vaccine2.pdf",
-    "relative_path": "PDSCC_Library/Unsorted/LouLou Vaccine2.pdf",
-    "source": "desktop",
-    "original_drive_id": null
-  },
-  {
-    "topic": "Unsorted",
-    "filename": "Pediatric ALF MultiD.pdf",
-    "relative_path": "PDSCC_Library/Unsorted/Pediatric ALF MultiD.pdf",
-    "source": "desktop",
-    "original_drive_id": null
   },
   {
     "topic": "PODIUM",
