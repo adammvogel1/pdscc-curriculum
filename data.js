@@ -104,7 +104,7 @@ const WEEKS_DATA = [
   {
     "week": 6,
     "topic": "Fluids",
-    "title": "Fluid Resuscitation in Adult Critical Illness: Crystalloid and Colloid Strategies",
+    "title": "Fluid Resuscitation in Critical Illness: Crystalloid Strategies in Adults and Children",
     "papers": [
       {
         "filename": "ALBIOS NEJM 2014.pdf",
@@ -123,6 +123,12 @@ const WEEKS_DATA = [
         "relative_path": "PDSCC_Library/Fluids/Balanced Crystalloids vs Saline NEJM 2018.pdf",
         "population": "adult",
         "description": "SMART — balanced crystalloids vs saline"
+      },
+      {
+        "filename": "Balanced vs NS for peds sepsis NEJM 2026.pdf",
+        "relative_path": "PDSCC_Library/Sepsis/Balanced vs NS for peds sepsis NEJM 2026.pdf",
+        "population": "peds",
+        "description": "PRoMPT BOLUS — balanced fluid vs. 0.9% saline for pediatric septic shock (Balamuth/Weiss et al, NEJM 2026)"
       }
     ]
   },
@@ -1919,6 +1925,13 @@ const MANIFEST_DATA = [
     "relative_path": "PDSCC_Library/Nutrition/Prehabilitation Review JACS 2026.pdf",
     "source": "drive",
     "original_drive_id": "1rjt7FCuGHxTwpNNCZhWGkDwEoOHN2Bva"
+  },
+  {
+    "topic": "Sepsis",
+    "filename": "Balanced vs NS for peds sepsis NEJM 2026.pdf",
+    "relative_path": "PDSCC_Library/Sepsis/Balanced vs NS for peds sepsis NEJM 2026.pdf",
+    "source": "drive",
+    "original_drive_id": "1N5xJcTmJtS9wbOz7HVXUDf8hqTdUOher"
   }
 ];
 
@@ -2189,7 +2202,7 @@ const QUESTIONS_DATA = [
   {
     "week": 6,
     "topic": "Fluids",
-    "title": "Fluid Resuscitation in Adult Critical Illness: Crystalloid and Colloid Strategies",
+    "title": "Fluid Resuscitation in Critical Illness: Crystalloid Strategies in Adults and Children",
     "questions": [
       {
         "id": "adultfluid_q1",
@@ -2238,6 +2251,30 @@ const QUESTIONS_DATA = [
         },
         "correct": "B",
         "explanation": "SMART demonstrated that the chloride content and physiologic balance of a crystalloid matters, with balanced crystalloids reducing major adverse kidney events compared with normal saline. SAFE showed that albumin versus saline was broadly neutral overall but revealed important subgroup heterogeneity (a harm signal in TBI, a possible benefit signal in sepsis). ALBIOS then directly tested that sepsis signal with a physiologic albumin-repletion strategy and still found no mortality benefit. Together these trials teach that fluid composition is not an inert choice — it can independently affect outcomes like AKI — but that adding albumin specifically to correct hypoalbuminemia has not been shown to improve survival, an important distinction for bedside decision-making."
+      },
+      {
+        "id": "fluidweek_q5",
+        "stem": "PRoMPT BOLUS (NEJM 2026) randomized 9,041 children with suspected septic shock at 47 emergency departments to resuscitation with balanced fluid versus 0.9% saline, with major adverse kidney event (MAKE) at 30 days as the primary outcome. What did it find?",
+        "choices": {
+          "A": "Balanced fluid significantly reduced major adverse kidney events compared with 0.9% saline, mirroring the adult SMART trial",
+          "B": "There was no significant difference in major adverse kidney events between balanced fluid and 0.9% saline (3.4% vs. 3.0%; risk ratio 1.10, 95% CI 0.88–1.40), despite balanced fluid causing significantly less hyperchloremia",
+          "C": "0.9% saline was significantly safer than balanced fluid and the trial was stopped early for harm in the balanced-fluid arm",
+          "D": "The trial could not be completed because too few children with septic shock could be enrolled"
+        },
+        "correct": "B",
+        "explanation": "PRoMPT BOLUS was a large, pragmatic, multinational pediatric trial designed to test whether balanced crystalloid reduces major adverse kidney events (a composite of death, new renal-replacement therapy, or persistent kidney dysfunction) compared with 0.9% saline in children with septic shock. Despite balanced fluid producing the expected biochemical benefit — substantially less hyperchloremia (31.4% vs. 49.0%) — there was no significant difference in the clinical primary outcome between groups. This is a rigorously conducted, adequately powered pediatric trial giving a clear neutral result for a question that had been extrapolated from adult data and observational pediatric studies."
+      },
+      {
+        "id": "fluidweek_q6",
+        "stem": "SMART (adult ICU, NEJM 2018) found that balanced crystalloids significantly reduced major adverse kidney events compared with saline, while PRoMPT BOLUS (pediatric septic shock, NEJM 2026) found no significant difference. What is the key teaching point from this divergence?",
+        "choices": {
+          "A": "One of the two trials must be flawed, since fluid physiology cannot differ between adults and children",
+          "B": "A large, well-powered adult trial result (balanced crystalloid reduces AKI-related outcomes) does not automatically generalize to children, and pediatric-specific trials are needed before extrapolating adult fluid-resuscitation evidence to pediatric practice",
+          "C": "Balanced fluid is proven harmful in children and should be avoided based on PRoMPT BOLUS",
+          "D": "PRoMPT BOLUS confirms the SMART findings exactly, just with different absolute event rates"
+        },
+        "correct": "B",
+        "explanation": "SMART enrolled a broad, heterogeneous adult ICU population and found balanced crystalloids reduced the composite MAKE30 outcome compared with saline. PRoMPT BOLUS asked essentially the same clinical question in children with septic shock specifically and, despite excellent trial conduct and adequate power, found no significant difference in adverse kidney outcomes, even though the expected biochemical differences (hyperchloremia, hypernatremia) were present. This pairing is a central teaching point of the curriculum: children are not simply small adults, and practice patterns adopted from adult critical care literature — however well-supported in adults — require their own pediatric evidence base before being assumed to apply, since population, illness physiology, and baseline risk can differ enough to change a trial's conclusion."
       }
     ]
   },
