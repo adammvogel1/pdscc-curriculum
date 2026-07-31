@@ -25,10 +25,11 @@
   };
 
   var state = {
-    view: "weeks", // 'weeks' | 'weekDetail' | 'quiz' | 'quizSummary' | 'progress'
+    view: "weeks", // 'weeks' | 'weekDetail' | 'quiz' | 'quizSummary' | 'progress' | 'library' | 'libraryFolder'
     searchText: "",
     selectedTopic: null,
     currentWeekNum: null,
+    currentLibraryTopic: null,
     quiz: null, // { weekNum, questions, index, selected, revealed, answers: [], submitted }
     user: null, // { name, email }
     trackingRecords: [], // records for the signed-in user, from the Sheet
@@ -207,6 +208,80 @@
         state.view = "weekDetail";
         render();
       });
+    });
+  }
+
+  // ---------------- Rendering: Library (topic folders -> PDFs) ----------------
+  // A second, independent way to reach every paper in PDSCC_Library, not just the
+  // ones assigned to a specific week. Grouped straight from MANIFEST_DATA.
+
+  function buildLibraryTopicIndex() {
+    var counts = {};
+    MANIFEST_DATA.forEach(function (m) {
+      counts[m.topic] = (counts[m.topic] || 0) + 1;
+    });
+    return Object.keys(counts).sort().map(function (name) {
+      return { name: name, count: counts[name] };
+    });
+  }
+
+  function renderLibraryView() {
+    var topics = buildLibraryTopicIndex();
+    var html = "";
+    html += '<div class="result-count">Browse the full paper library by topic folder &mdash; ' + MANIFEST_DATA.length + ' papers across ' + topics.length + ' topics</div>';
+    html += '<div class="library-grid">';
+    topics.forEach(function (t) {
+      html += '<div class="library-folder-card" data-topic="' + esc(t.name) + '">' +
+        '<div class="library-folder-icon">&#128193;</div>' +
+        '<div class="library-folder-name">' + esc(t.name) + '</div>' +
+        '<div class="library-folder-count">' + t.count + " paper" + (t.count === 1 ? "" : "s") + '</div>' +
+        '</div>';
+    });
+    html += "</div>";
+    root.innerHTML = html;
+
+    Array.prototype.forEach.call(root.querySelectorAll(".library-folder-card"), function (card) {
+      card.addEventListener("click", function () {
+        state.currentLibraryTopic = card.getAttribute("data-topic");
+        state.view = "libraryFolder";
+        render();
+      });
+    });
+  }
+
+  function renderLibraryFolderView() {
+    var topic = state.currentLibraryTopic;
+    var files = MANIFEST_DATA.filter(function (m) { return m.topic === topic; })
+      .slice()
+      .sort(function (a, b) { return a.filename.localeCompare(b.filename); });
+
+    var html = "";
+    html += '<button class="back-link" id="back-to-library">&larr; Back to Library</button>';
+    html += '<div class="week-detail-header">' +
+      '<div class="week-detail-eyebrow"><span class="topic-tag">' + esc(topic) + '</span></div>' +
+      '<h2 class="week-detail-title">' + esc(topic) + '</h2>' +
+      '<div class="result-count">' + files.length + " paper" + (files.length === 1 ? "" : "s") + " in this topic" + '</div>' +
+      '</div>';
+
+    html += '<div class="library-file-list">';
+    files.forEach(function (m) {
+      html += '<div class="library-file-item">' +
+        '<span class="library-file-name">' + esc(m.filename) + '</span>' +
+        '<a class="paper-link" href="' + encodePath(m.relative_path) + '" target="_blank" rel="noopener">Open PDF &rarr;</a>' +
+        '</div>';
+    });
+    html += "</div>";
+
+    if (files.length === 0) {
+      html += '<div class="empty-state">No papers found in this topic folder.</div>';
+    }
+
+    root.innerHTML = html;
+
+    document.getElementById("back-to-library").addEventListener("click", function () {
+      state.currentLibraryTopic = null;
+      state.view = "library";
+      render();
     });
   }
 
@@ -641,7 +716,7 @@
   // ---------------- Master render ----------------
 
   function render() {
-    var navMap = { weeks: "weeks", progress: "progress" };
+    var navMap = { weeks: "weeks", progress: "progress", library: "library", libraryFolder: "library" };
     var activeNav = navMap[state.view] || "weeks"; // weekDetail/quiz/quizSummary count as "weeks"
     navButtons.forEach(function (btn) {
       btn.classList.toggle("active", btn.getAttribute("data-nav") === activeNav);
@@ -665,6 +740,12 @@
     } else if (state.view === "progress") {
       toolbar.classList.add("hidden");
       renderProgressView();
+    } else if (state.view === "library") {
+      toolbar.classList.add("hidden");
+      renderLibraryView();
+    } else if (state.view === "libraryFolder") {
+      toolbar.classList.add("hidden");
+      renderLibraryFolderView();
     }
     window.scrollTo(0, 0);
   }
@@ -680,7 +761,14 @@
   navButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       var nav = btn.getAttribute("data-nav");
-      state.view = nav === "progress" ? "progress" : "weeks";
+      if (nav === "progress") {
+        state.view = "progress";
+      } else if (nav === "library") {
+        state.currentLibraryTopic = null;
+        state.view = "library";
+      } else {
+        state.view = "weeks";
+      }
       render();
     });
   });

@@ -337,18 +337,37 @@ const WEEKS_DATA = [
   {
     "week": 17,
     "topic": "Nutrition",
-    "title": "Timing of Parenteral Nutrition in Critical Illness",
+    "title": "Perioperative Nutrition: Prehabilitation and the Timing of Nutritional Support",
     "papers": [
       {
         "filename": "Early vs Late TPN Peds NEJM 2016.pdf",
         "relative_path": "PDSCC_Library/Nutrition/Early vs Late TPN Peds NEJM 2016.pdf",
         "population": "peds",
         "description": "PEPaNIC — early vs late PN in critically ill children"
+      },
+      {
+        "filename": "Prehabilitation Review JACS 2026.pdf",
+        "relative_path": "PDSCC_Library/Nutrition/Prehabilitation Review JACS 2026.pdf",
+        "population": "review",
+        "description": "Systematic review/meta-analysis: exercise- and nutrition-based prehabilitation reduces length of stay and complications across surgical contexts (Chevalier et al, JACS 2026)"
       }
     ]
   },
   {
     "week": 18,
+    "topic": "Nutrition",
+    "title": "Gastric Residual Volume Monitoring in Critically Ill Children — the GASTRIC-PICU Trial",
+    "papers": [
+      {
+        "filename": "Gastric Residuals PICU JAMAPeds 2026.pdf",
+        "relative_path": "PDSCC_Library/Nutrition/Gastric Residuals PICU JAMAPeds 2026.pdf",
+        "population": "peds",
+        "description": "GASTRIC-PICU — pragmatic noninferiority RCT of no routine gastric residual volume assessment vs. usual 6-hourly checks in ventilated children (Tume et al, JAMA 2026)"
+      }
+    ]
+  },
+  {
+    "week": 19,
     "topic": "AKI",
     "title": "Epidemiology of Pediatric AKI",
     "papers": [
@@ -367,7 +386,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 19,
+    "week": 20,
     "topic": "ECMO",
     "title": "ECMO Anticoagulation and Coagulation Management",
     "papers": [
@@ -380,7 +399,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 20,
+    "week": 21,
     "topic": "ARDS",
     "title": "High-Frequency Oscillatory Ventilation in ARDS/PARDS",
     "papers": [
@@ -411,7 +430,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 21,
+    "week": 22,
     "topic": "Neonatal Hemodynamics",
     "title": "Neonatal Hemodynamics",
     "papers": [
@@ -424,7 +443,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 22,
+    "week": 23,
     "topic": "Transfusion",
     "title": "Age of Transfused Blood",
     "papers": [
@@ -437,7 +456,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 23,
+    "week": 24,
     "topic": "Sepsis",
     "title": "Early Goal-Directed Therapy — Rise and Fall of a Sepsis Paradigm",
     "papers": [
@@ -474,7 +493,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 24,
+    "week": 25,
     "topic": "Delirium",
     "title": "PICU Delirium and Post-TBI Tracheostomy",
     "papers": [
@@ -493,7 +512,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 25,
+    "week": 26,
     "topic": "ECMO",
     "title": "ECMO as Rescue Therapy in Severe ARDS",
     "papers": [
@@ -518,7 +537,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 26,
+    "week": 27,
     "topic": "Nutrition",
     "title": "Enteral Nutrition During Vasopressor Support",
     "papers": [
@@ -531,7 +550,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 27,
+    "week": 28,
     "topic": "AKI/Neonatal",
     "title": "Neonatal AKI Epidemiology (AWAKEN)",
     "papers": [
@@ -544,7 +563,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 28,
+    "week": 29,
     "topic": "ARDS",
     "title": "Defining Pediatric ARDS (PALICC)",
     "papers": [
@@ -557,7 +576,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 29,
+    "week": 30,
     "topic": "TBI",
     "title": "Severe Traumatic Brain Injury Guidelines",
     "papers": [
@@ -570,7 +589,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 30,
+    "week": 31,
     "topic": "Delirium/Sedation",
     "title": "ICU Liberation: the ABCDEF Bundle and Pediatric Sedation Guidelines",
     "papers": [
@@ -589,7 +608,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 31,
+    "week": 32,
     "topic": "Transfusion",
     "title": "Pediatric Transfusion Consensus Guidelines (TAXI)",
     "papers": [
@@ -602,7 +621,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 32,
+    "week": 33,
     "topic": "Transfusion",
     "title": "Tranexamic Acid in Trauma",
     "papers": [
@@ -627,7 +646,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 33,
+    "week": 34,
     "topic": "Sepsis/ECMO",
     "title": "VA-ECMO in Septic Shock",
     "papers": [
@@ -652,7 +671,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 34,
+    "week": 35,
     "topic": "Endocrine",
     "title": "Corticosteroids in Adult Septic Shock (ADRENAL)",
     "papers": [
@@ -665,7 +684,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 35,
+    "week": 36,
     "topic": "ARDS",
     "title": "Pediatric Tracheostomy: Timing and Outcomes",
     "papers": [
@@ -678,7 +697,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 36,
+    "week": 37,
     "topic": "Transfusion",
     "title": "Bleeding Assessment and Institutional ECMO Experience",
     "papers": [
@@ -703,7 +722,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 37,
+    "week": 38,
     "topic": "AKI/Dosing",
     "title": "CRRT Dosing/Intensity",
     "papers": [
@@ -716,7 +735,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 38,
+    "week": 39,
     "topic": "ARDS",
     "title": "Neuromuscular Blockade in ARDS",
     "papers": [
@@ -763,7 +782,7 @@ const WEEKS_DATA = [
         "description": "PODIUM — respiratory dysfunction criteria"
       }
     ],
-    "week": 39
+    "week": 40
   },
   {
     "topic": "Acute Liver Failure",
@@ -782,10 +801,10 @@ const WEEKS_DATA = [
         "description": "PODIUM — acute liver dysfunction criteria"
       }
     ],
-    "week": 40
+    "week": 41
   },
   {
-    "week": 41,
+    "week": 42,
     "topic": "Sepsis",
     "title": "Pediatric Sepsis: Guidelines and the New Phoenix Criteria",
     "papers": [
@@ -804,7 +823,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 42,
+    "week": 43,
     "topic": "Transfusion",
     "title": "Whole Blood Resuscitation in Trauma",
     "papers": [
@@ -823,7 +842,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 43,
+    "week": 44,
     "topic": "ECMO",
     "title": "Extracorporeal Cardiopulmonary Resuscitation (ECPR)",
     "papers": [
@@ -836,7 +855,7 @@ const WEEKS_DATA = [
     ]
   },
   {
-    "week": 44,
+    "week": 45,
     "topic": "ARDS",
     "title": "Surfactant Therapy in PARDS",
     "papers": [
@@ -1886,6 +1905,20 @@ const MANIFEST_DATA = [
     "relative_path": "PDSCC_Library/ECMO/Multisite Neo VV ELSO PCCM 2026.pdf",
     "source": "drive",
     "original_drive_id": "1OOG0L_TyIn5OqsLrh3AP06w3J16gYX-x"
+  },
+  {
+    "topic": "Nutrition",
+    "filename": "Gastric Residuals PICU JAMAPeds 2026.pdf",
+    "relative_path": "PDSCC_Library/Nutrition/Gastric Residuals PICU JAMAPeds 2026.pdf",
+    "source": "drive",
+    "original_drive_id": "1JY87ZVZKydev5LCq3AcfEjmxkJrGe0DW"
+  },
+  {
+    "topic": "Nutrition",
+    "filename": "Prehabilitation Review JACS 2026.pdf",
+    "relative_path": "PDSCC_Library/Nutrition/Prehabilitation Review JACS 2026.pdf",
+    "source": "drive",
+    "original_drive_id": "1rjt7FCuGHxTwpNNCZhWGkDwEoOHN2Bva"
   }
 ];
 
@@ -2713,7 +2746,7 @@ const QUESTIONS_DATA = [
   {
     "week": 17,
     "topic": "Nutrition",
-    "title": "Timing of Parenteral Nutrition in Critical Illness",
+    "title": "Perioperative Nutrition: Prehabilitation and the Timing of Nutritional Support",
     "questions": [
       {
         "id": "w12q1",
@@ -2750,11 +2783,66 @@ const QUESTIONS_DATA = [
         },
         "correct": "B",
         "explanation": "PEPaNIC's results have informed a general shift in pediatric critical care nutrition practice toward delaying supplemental parenteral nutrition, prioritizing enteral nutrition when tolerated, and reserving earlier PN initiation for children at elevated nutritional risk (such as those with pre-existing malnutrition or an anticipated prolonged inability to achieve adequate enteral intake). This represents a meaningful departure from the prior default of starting PN promptly to avoid caloric deficit, illustrating how a single well-designed pediatric RCT can directly and rapidly change practice patterns, in contrast to many areas of pediatric critical care that still lack such definitive trial-level evidence."
+      },
+      {
+        "id": "prehab_q1",
+        "stem": "A 2026 systematic review and meta-analysis of 23 RCTs (2,182 patients) evaluated exercise-based and nutrition-based prehabilitation programs before surgery. What did it find regarding length of stay and complications compared with standard preoperative care?",
+        "choices": {
+          "A": "Prehabilitation significantly increased length of stay and complications compared with standard treatment",
+          "B": "Prehabilitation (exercise- and/or nutrition-based) was associated with significantly reduced length of stay and reduced odds of postoperative complications compared with standard treatment",
+          "C": "Prehabilitation had no measurable effect on length of stay, complications, or quality of life in any study",
+          "D": "Only nutrition-based prehabilitation showed benefit; exercise-based programs showed harm"
+        },
+        "correct": "B",
+        "explanation": "This meta-analysis pooled randomized controlled trials of preoperative exercise- and/or nutrition-based prehabilitation programs across multiple surgical contexts. Prehabilitation was associated with a significantly shorter length of stay and significantly reduced odds of postoperative complications compared with standard preoperative care, with some evidence also favoring improved quality-of-life and pain outcomes. This body of evidence supports the broader concept that modifiable risk factors — physical fitness and nutritional status — can be optimized before an operation to improve postoperative recovery, complementing the PEPaNIC finding that nutritional intervention timing also matters once a child is already critically ill."
       }
     ]
   },
   {
     "week": 18,
+    "topic": "Nutrition",
+    "title": "Gastric Residual Volume Monitoring in Critically Ill Children — the GASTRIC-PICU Trial",
+    "questions": [
+      {
+        "id": "gastric_q1",
+        "stem": "GASTRIC-PICU (JAMA 2026) randomized 4,700 mechanically ventilated children across 24 PICUs to no routine gastric residual volume (GRV) assessment versus usual care (GRV checks at least every 6 hours). What was the result for the clinical co-primary outcome (a composite of survival and ventilator-free days at 30 days)?",
+        "choices": {
+          "A": "No routine GRV assessment was noninferior to usual 6-hourly GRV checks for the composite of survival and ventilator-free days at 30 days",
+          "B": "No routine GRV assessment significantly worsened survival and ventilator-free days compared with usual care",
+          "C": "The trial was stopped early because omitting GRV checks caused a dramatic rise in ventilator-associated pneumonia",
+          "D": "Usual care was clearly superior and the trial concluded GRV assessment should be mandatory in all PICUs"
+        },
+        "correct": "A",
+        "explanation": "GASTRIC-PICU was a pragmatic, multicenter, noninferiority RCT comparing no routine GRV assessment with usual 6-hourly assessment in children receiving invasive ventilation and enteral feeds. For the clinical co-primary outcome — a composite of survival and ventilator-free days at 30 days — not routinely assessing GRV was noninferior to usual care (adjusted odds ratio 0.95, 95% CI 0.86–1.05), with median ventilator-free days identical between groups (25 days in both arms). This directly challenged the long-standing but poorly evidenced practice of routine gastric aspirate measurement to guide feed tolerance in the PICU."
+      },
+      {
+        "id": "gastric_q2",
+        "stem": "What did GASTRIC-PICU find for its nutritional co-primary outcome — the percentage of children meeting energy requirements by 72 hours?",
+        "choices": {
+          "A": "There was no difference in nutritional achievement between groups",
+          "B": "Children in the no routine GRV assessment group achieved significantly higher energy delivery by 72 hours than the usual care group (80.3% vs. 76.8%)",
+          "C": "Children in the usual care (routine GRV) group achieved significantly higher energy delivery than the no routine GRV group",
+          "D": "Nutritional targets could not be assessed because too many children had feeds withheld in both groups"
+        },
+        "correct": "B",
+        "explanation": "The nutritional co-primary outcome was designed as a superiority comparison. Children randomized to no routine GRV assessment achieved a significantly higher mean percentage of energy requirements by 72 hours than those receiving usual 6-hourly GRV checks (80.3% vs. 76.8%; adjusted mean difference 3.2 percentage points, 95% CI 1.3–5.2, p<.001). This supports the trial's underlying hypothesis: routine GRV assessment frequently leads clinicians to withhold feeds based on a perceived high aspirate volume, even though aspirate volume correlates poorly with true gastric residual volume, so removing this practice allows more consistent enteral nutrition delivery without compromising safety."
+      },
+      {
+        "id": "gastric_q3",
+        "stem": "Taken together, what is the practice-changing implication of GASTRIC-PICU for enteral feeding management in the PICU?",
+        "choices": {
+          "A": "Gastric residual volume checks should be performed even more frequently than every 6 hours to further improve safety",
+          "B": "Routine GRV assessment can be safely abandoned in favor of assessing feed tolerance using clinical signs alone, without compromising the composite outcome of survival and ventilator-free days, while improving nutritional delivery",
+          "C": "Enteral feeding should be discontinued entirely in favor of parenteral nutrition in ventilated children",
+          "D": "GRV assessment remains mandatory because the trial found it improved outcomes"
+        },
+        "correct": "B",
+        "explanation": "GASTRIC-PICU provides definitive, large-scale pragmatic trial evidence that a widespread but poorly evidenced PICU practice — routine gastric residual volume assessment — can be abandoned in favor of monitoring clinical signs of feed intolerance, without compromising the clinical composite of survival and ventilator-free days, and while significantly improving the proportion of children meeting nutritional targets. This pairs conceptually with prehabilitation and PEPaNIC in the same curricular unit: across the surgical and critical illness timeline, several long-held nutrition-related practices (early aggressive PN, routine GRV checks) have been shown by rigorous trials to be unnecessary or even counterproductive, while deliberate preoperative nutritional optimization (prehabilitation) has shown benefit — underscoring that nutrition practice in this population should be driven by trial evidence rather than tradition."
+      }
+    ]
+  },
+  {
+    "week": 19,
     "topic": "AKI",
     "title": "Epidemiology of Pediatric AKI",
     "questions": [
@@ -2797,7 +2885,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 19,
+    "week": 20,
     "topic": "ECMO",
     "title": "ECMO Anticoagulation and Coagulation Management",
     "questions": [
@@ -2840,7 +2928,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 20,
+    "week": 21,
     "topic": "ARDS",
     "title": "High-Frequency Oscillatory Ventilation in ARDS/PARDS",
     "questions": [
@@ -2895,7 +2983,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 21,
+    "week": 22,
     "topic": "Neonatal Hemodynamics",
     "title": "Neonatal Hemodynamics",
     "questions": [
@@ -2938,7 +3026,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 22,
+    "week": 23,
     "topic": "Transfusion",
     "title": "Age of Transfused Blood",
     "questions": [
@@ -2981,7 +3069,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 23,
+    "week": 24,
     "topic": "Sepsis",
     "title": "Early Goal-Directed Therapy — Rise and Fall of a Sepsis Paradigm",
     "questions": [
@@ -3048,7 +3136,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 24,
+    "week": 25,
     "topic": "Delirium",
     "title": "PICU Delirium and Post-TBI Tracheostomy",
     "questions": [
@@ -3103,7 +3191,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 25,
+    "week": 26,
     "topic": "ECMO",
     "title": "ECMO as Rescue Therapy in Severe ARDS",
     "questions": [
@@ -3158,7 +3246,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 26,
+    "week": 27,
     "topic": "Nutrition",
     "title": "Enteral Nutrition During Vasopressor Support",
     "questions": [
@@ -3201,7 +3289,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 27,
+    "week": 28,
     "topic": "AKI/Neonatal",
     "title": "Neonatal AKI Epidemiology (AWAKEN)",
     "questions": [
@@ -3244,7 +3332,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 28,
+    "week": 29,
     "topic": "ARDS",
     "title": "Defining Pediatric ARDS (PALICC)",
     "questions": [
@@ -3287,7 +3375,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 29,
+    "week": 30,
     "topic": "TBI",
     "title": "Severe Traumatic Brain Injury Guidelines",
     "questions": [
@@ -3342,7 +3430,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 30,
+    "week": 31,
     "topic": "Delirium/Sedation",
     "title": "ICU Liberation: the ABCDEF Bundle and Pediatric Sedation Guidelines",
     "questions": [
@@ -3397,7 +3485,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 31,
+    "week": 32,
     "topic": "Transfusion",
     "title": "Pediatric Transfusion Consensus Guidelines (TAXI)",
     "questions": [
@@ -3440,7 +3528,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 32,
+    "week": 33,
     "topic": "Transfusion",
     "title": "Tranexamic Acid in Trauma",
     "questions": [
@@ -3495,7 +3583,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 33,
+    "week": 34,
     "topic": "Sepsis/ECMO",
     "title": "VA-ECMO in Septic Shock",
     "questions": [
@@ -3538,7 +3626,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 34,
+    "week": 35,
     "topic": "Endocrine",
     "title": "Corticosteroids in Adult Septic Shock (ADRENAL)",
     "questions": [
@@ -3581,7 +3669,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 35,
+    "week": 36,
     "topic": "ARDS",
     "title": "Pediatric Tracheostomy: Timing and Outcomes",
     "questions": [
@@ -3624,7 +3712,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 36,
+    "week": 37,
     "topic": "Transfusion",
     "title": "Bleeding Assessment and Institutional ECMO Experience",
     "questions": [
@@ -3667,7 +3755,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 37,
+    "week": 38,
     "topic": "AKI/Dosing",
     "title": "CRRT Dosing/Intensity",
     "questions": [
@@ -3710,7 +3798,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 38,
+    "week": 39,
     "topic": "ARDS",
     "title": "Neuromuscular Blockade in ARDS",
     "questions": [
@@ -3765,7 +3853,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 39,
+    "week": 40,
     "topic": "PODIUM",
     "title": "Defining Pediatric Organ Dysfunction: The PODIUM Consensus Criteria",
     "questions": [
@@ -3820,7 +3908,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 40,
+    "week": 41,
     "topic": "Acute Liver Failure",
     "title": "Acute Liver Failure in Children: Multidisciplinary Management",
     "questions": [
@@ -3863,7 +3951,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 41,
+    "week": 42,
     "topic": "Sepsis",
     "title": "Pediatric Sepsis: Guidelines and the New Phoenix Criteria",
     "questions": [
@@ -3918,7 +4006,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 42,
+    "week": 43,
     "topic": "Transfusion",
     "title": "Whole Blood Resuscitation in Trauma",
     "questions": [
@@ -3973,7 +4061,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 43,
+    "week": 44,
     "topic": "ECMO",
     "title": "Extracorporeal Cardiopulmonary Resuscitation (ECPR)",
     "questions": [
@@ -4016,7 +4104,7 @@ const QUESTIONS_DATA = [
     ]
   },
   {
-    "week": 44,
+    "week": 45,
     "topic": "ARDS",
     "title": "Surfactant Therapy in PARDS",
     "questions": [
@@ -4060,4 +4148,4 @@ const QUESTIONS_DATA = [
   }
 ];
 
-const QUESTIONS_SOURCE = "full_44week";
+const QUESTIONS_SOURCE = "full_45week";
