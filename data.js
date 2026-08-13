@@ -584,13 +584,19 @@ const WEEKS_DATA = [
   {
     "week": 30,
     "topic": "TBI",
-    "title": "Severe Traumatic Brain Injury Guidelines",
+    "title": "Severe Traumatic Brain Injury Guidelines and Brain Death Determination",
     "papers": [
       {
         "filename": "pTBI Guidelines PCCM 2019.pdf",
         "relative_path": "PDSCC_Library/TBI/pTBI Guidelines PCCM 2019.pdf",
         "population": "peds",
         "description": "Pediatric severe TBI guidelines, 3rd ed."
+      },
+      {
+        "filename": "Brain Death 2023.pdf",
+        "relative_path": "PDSCC_Library/TBI/Brain Death 2023.pdf",
+        "population": "review",
+        "description": "2023 pediatric/adult brain death (death by neurologic criteria) consensus guideline (AAN/AAP/CNS/SCCM)"
       }
     ]
   },
@@ -812,13 +818,19 @@ const WEEKS_DATA = [
   {
     "week": 42,
     "topic": "Sepsis",
-    "title": "Pediatric Sepsis: Guidelines and the New Phoenix Criteria",
+    "title": "Pediatric Sepsis: Surviving Sepsis Guidelines (2020 & 2026) and the Phoenix Criteria",
     "papers": [
       {
         "filename": "Peds Surviving Sepsis PCCM 2020.pdf",
         "relative_path": "PDSCC_Library/Sepsis/Peds Surviving Sepsis PCCM 2020.pdf",
         "population": "peds",
         "description": "2020 Surviving Sepsis Campaign — pediatric guideline"
+      },
+      {
+        "filename": "Peds Surviving Sepsis 2026.pdf",
+        "relative_path": "PDSCC_Library/Sepsis/Peds Surviving Sepsis 2026.pdf",
+        "population": "peds",
+        "description": "2026 Surviving Sepsis Campaign — updated pediatric guideline (Weiss et al, PCCM/ICM 2026)"
       },
       {
         "filename": "Phoenix Sepsis Criteria JAMA 2024.pdf",
@@ -1911,6 +1923,20 @@ const MANIFEST_DATA = [
     "relative_path": "PDSCC_Library/Sepsis/Balanced vs NS for peds sepsis NEJM 2026.pdf",
     "source": "drive",
     "original_drive_id": "1N5xJcTmJtS9wbOz7HVXUDf8hqTdUOher"
+  },
+  {
+    "topic": "Sepsis",
+    "filename": "Peds Surviving Sepsis 2026.pdf",
+    "relative_path": "PDSCC_Library/Sepsis/Peds Surviving Sepsis 2026.pdf",
+    "source": "drive",
+    "original_drive_id": "1g_DbB2QEXzoVHQL-yYsIF0B3XAbeSFes"
+  },
+  {
+    "topic": "TBI",
+    "filename": "Brain Death 2023.pdf",
+    "relative_path": "PDSCC_Library/TBI/Brain Death 2023.pdf",
+    "source": "drive",
+    "original_drive_id": "1QdnHRMDl4DicWGcu1PryC5oMCTbaBKGi"
   }
 ];
 
@@ -3393,7 +3419,7 @@ const QUESTIONS_DATA = [
   {
     "week": 30,
     "topic": "TBI",
-    "title": "Severe Traumatic Brain Injury Guidelines",
+    "title": "Severe Traumatic Brain Injury Guidelines and Brain Death Determination",
     "questions": [
       {
         "id": "w24q1",
@@ -3442,6 +3468,42 @@ const QUESTIONS_DATA = [
         },
         "correct": "B",
         "explanation": "Conducting large, definitive randomized trials in severe pediatric TBI is ethically and logistically challenging (given the acuity, need for rapid intervention, and relatively smaller patient population compared with adult TBI), so many pediatric severe TBI guideline recommendations, including specific ICP and CPP thresholds, are based on lower-quality evidence, such as observational studies or expert consensus, rather than high-quality randomized trials. Recognizing this distinction is important so that clinicians appropriately calibrate their confidence in specific numeric thresholds and remain willing to individualize care based on the patient's specific physiology, rather than treating every guideline recommendation as equally evidence-based, a broader critical-appraisal skill emphasized throughout this curriculum."
+      },
+      {
+        "id": "braindeath_q1",
+        "stem": "Per the 2023 pediatric/adult brain death (BD/DNC) consensus guideline, how do the requirements for the number of independent clinical examinations differ between adults and children?",
+        "choices": {
+          "A": "In children, 2 clinicians must each perform a separate, independent examination, separated by a minimum interval of 12 hours; in adults, a minimum of 1 examination is required, and a second, independent examination by a separate clinician may be performed but is not mandated",
+          "B": "Both adults and children require exactly 2 independent examinations performed by the same clinician, 24 hours apart",
+          "C": "Adults require 2 independent examinations while children require only 1, since pediatric brainstem injury is considered more definitively permanent",
+          "D": "Neither adults nor children require more than one clinical examination under the 2023 guideline"
+        },
+        "correct": "A",
+        "explanation": "The 2023 consensus guideline requires, in children, that 2 clinicians each perform a separate and independent BD/DNC examination, with a minimum interval of 12 hours between them (Level A) — continuing the more conservative pediatric standard from the 2011 guideline. In adults, only a minimum of 1 examination is required (Level A), and a second independent examination by a separate clinician is optional (Level C, \"may perform\"), reflecting the panel's judgment that the added protection of a mandatory second exam is warranted in children given the higher stakes of an erroneous determination and differing injury patterns in the developing brain."
+      },
+      {
+        "id": "braindeath_q2",
+        "stem": "What minimum observation period does the 2023 BD/DNC guideline recommend before initiating brain death evaluation after acute brain injury, and how does it differ by age?",
+        "choices": {
+          "A": "For infants and children younger than 24 months, clinicians should wait at least 48 hours after the acute brain injury before initiating BD/DNC evaluation; for patients 24 months and older with hypoxic-ischemic brain injury (HIBI), a minimum of 24 hours is recommended",
+          "B": "A uniform 6-hour observation period applies regardless of age or mechanism of injury",
+          "C": "No observation period is required as long as an ancillary test is performed",
+          "D": "The observation period is 1 week for all pediatric patients regardless of injury mechanism"
+        },
+        "correct": "A",
+        "explanation": "The guideline recommends that clinicians wait at least 48 hours after acute brain injury before initiating BD/DNC evaluation in infants and children younger than 24 months (Level B), reflecting concern that open fontanelles and unfused sutures, along with relative brainstem resistance to hypoxic-ischemic injury, may allow apparent brainstem function to re-emerge as cerebral edema subsides. For patients 24 months and older with HIBI specifically, a minimum 24-hour observation period is recommended (Level B). These conservative, age- and mechanism-based observation periods are intended to minimize the risk of a false-positive BD/DNC determination."
+      },
+      {
+        "id": "braindeath_q3",
+        "stem": "What modifications does the 2023 guideline recommend for apnea testing in a patient supported on ECMO, and why are they necessary?",
+        "choices": {
+          "A": "Preoxygenate with 100% FiO2 via the ventilator and membrane lung, raise PaCO2 by adjusting the ECMO sweep gas flow (to about 0.2–1 L/min) or adding exogenous CO2 to the circuit, and sample arterial blood gases from both the patient's distal arterial line and the ECMO circuit postoxygenator — because on VA ECMO, blood from the native heart/lungs mixes with circuit blood at a \"watershed\" point, so a single sampling site may not reflect the PaCO2 and pH actually reaching the cerebral circulation",
+          "B": "No modification is needed; standard ventilator-disconnection apnea testing is performed identically regardless of ECMO support",
+          "C": "The ECMO circuit must be turned off entirely for the duration of apnea testing to obtain an accurate PaCO2",
+          "D": "Apnea testing is contraindicated in any patient on ECMO and an ancillary test must always be substituted"
+        },
+        "correct": "A",
+        "explanation": "Because ECMO alters normal cardiopulmonary physiology, the guideline recommends preoxygenating with 100% FiO2 through the ventilator and membrane lung, then achieving an adequate PaCO2 rise either by titrating exogenous CO2 into the ECMO circuit or by decreasing the sweep gas flow rate (to roughly 0.2–1 L/min). Critically, on VA ECMO, native cardiac output can mix with ECMO circuit blood at a variable \"watershed\" or mixing point in the aorta, so ABG sampling from only a distal arterial line may not reflect gas tensions reaching the brain; the guideline therefore requires paired sampling from both the distal arterial line and the ECMO circuit postoxygenator, with both locations needing to meet the PaCO2/pH threshold (≥60 mm Hg, or ≥20 mm Hg over baseline) for the apnea test to be considered consistent with BD/DNC."
       }
     ]
   },
@@ -3969,7 +4031,7 @@ const QUESTIONS_DATA = [
   {
     "week": 42,
     "topic": "Sepsis",
-    "title": "Pediatric Sepsis: Guidelines and the New Phoenix Criteria",
+    "title": "Pediatric Sepsis: Surviving Sepsis Guidelines (2020 & 2026) and the Phoenix Criteria",
     "questions": [
       {
         "id": "w34q1",
@@ -4018,6 +4080,30 @@ const QUESTIONS_DATA = [
         },
         "correct": "B",
         "explanation": "A central limitation of the SIRS-based 2005 IPSCC definition was that SIRS criteria (abnormal temperature, heart rate, respiratory rate, and white blood cell count) are highly sensitive but poorly specific, being met by many critically ill or even routinely postoperative children who do not have life-threatening sepsis, such as children with viral illness or those recovering from major surgery. This poor specificity limited the definition's usefulness both for bedside recognition of true sepsis and for consistently identifying an appropriate cohort for sepsis research. The Phoenix criteria's organ-dysfunction-based approach, mirroring the rationale behind the adult Sepsis-3 definition, was developed specifically to better identify children with genuine, life-threatening infection-associated organ dysfunction."
+      },
+      {
+        "id": "pedsss2026_q1",
+        "stem": "Regarding first-line vasoactive agent selection for pediatric septic shock, what does the 2026 Surviving Sepsis Campaign pediatric guideline recommend?",
+        "choices": {
+          "A": "It suggests using epinephrine, rather than dopamine, as a first-line vasoactive agent (a separate recommendation similarly favors norepinephrine over dopamine), while dopamine is reserved as an alternative if neither epinephrine nor norepinephrine is readily available",
+          "B": "It recommends dopamine as the preferred first-line vasoactive agent in all children with septic shock",
+          "C": "It recommends against using any vasoactive medication until central venous access is established",
+          "D": "It recommends phenylephrine as the preferred first-line vasoactive agent"
+        },
+        "correct": "A",
+        "explanation": "The 2026 pediatric Surviving Sepsis Campaign guideline suggests using epinephrine, rather than dopamine, in children with septic shock, and separately suggests norepinephrine, rather than dopamine, as well — dopamine is de-emphasized as first-line therapy, consistent with the broader move away from dopamine in septic shock across both adult and pediatric guidelines. The guideline also newly permits initiating vasoactive medications through peripheral IV or IO access rather than requiring central access first, so as not to delay therapy, with dopamine substitutable as a first-line peripheral option if epinephrine or norepinephrine is not readily available."
+      },
+      {
+        "id": "pedsss2026_q2",
+        "stem": "Which aspects of pediatric septic shock management were explicitly carried forward unchanged from the 2020 to the 2026 Surviving Sepsis Campaign pediatric guideline?",
+        "choices": {
+          "A": "The initial fluid bolus strategy (up to 40–60 mL/kg in 10–20 mL/kg increments over the first hour, titrated to perfusion and stopped for fluid overload) and preference for balanced/buffered crystalloids over 0.9% saline",
+          "B": "The recommendation to use albumin as the mandatory first-line resuscitation fluid",
+          "C": "The recommendation to target tight glycemic control with an insulin infusion",
+          "D": "The recommendation to administer a single 60 mL/kg bolus without reassessment"
+        },
+        "correct": "A",
+        "explanation": "The 2026 guideline explicitly carried forward, unchanged, the 2020 recommendations for incremental fluid resuscitation (up to 40–60 mL/kg total in 10–20 mL/kg boluses over the first hour, titrated to clinical markers of cardiac output and discontinued for fluid overload) and for balanced/buffered crystalloids over 0.9% saline as the preferred resuscitation fluid. The approach to IV hydrocortisone — suggesting against it when hemodynamic stability is restored with fluids and vasoactive agents, with either hydrocortisone or no hydrocortisone being reasonable in refractory shock — was likewise unchanged on review, reflecting continued equipoise in this area despite six additional years of accumulating evidence."
       }
     ]
   },
